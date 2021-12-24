@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
-    public float speed = 5f;
+    public float speed = 1f;
     Transform tr_;
     private void Start()
     {
@@ -19,6 +18,9 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 dir = new Vector3(hor, 0f, ver).normalized;
 
-        tr_.position += dir * speed * Time.deltaTime;
+        if (dir.magnitude > 0.1f)
+        {
+            tr_.position += dir * speed * Time.deltaTime;
+        }
     }
 }
