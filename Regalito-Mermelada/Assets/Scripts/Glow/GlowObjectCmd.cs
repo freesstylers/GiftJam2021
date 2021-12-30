@@ -34,7 +34,9 @@ public class GlowObjectCmd : MonoBehaviour
         {
             _targetColor = GlowColor;
             running = true;
-        }
+
+			GetComponent<DialogueTrigger>().TriggerDialogue();
+		}
     }
 
     private void OnTriggerExit(Collider other)
