@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43667555, g: 0.48427182, b: 0.5645241, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -538,7 +538,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 654051331}
-  m_LocalRotation: {x: 0.27566084, y: 0.005589917, z: -0.0015437264, w: 0.9612375}
+  m_LocalRotation: {x: 0.27566057, y: 0.00610972, z: -0.001687298, w: 0.96123415}
   m_LocalPosition: {x: 69.03, y: 15.139886, z: 6.613943}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1313,6 +1313,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6365426146743973926, guid: 76d4cf7a805f848448c25b26fd0dff20, type: 3}
+      propertyPath: dist
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365426146743973926, guid: 76d4cf7a805f848448c25b26fd0dff20, type: 3}
+      propertyPath: speed
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76d4cf7a805f848448c25b26fd0dff20, type: 3}
 --- !u!1 &1802496544
@@ -1381,7 +1389,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1802496544}
-  m_LocalRotation: {x: 0.2709027, y: 0.0069772894, z: -0.0019636468, w: 0.9625795}
+  m_LocalRotation: {x: 0.27090126, y: 0.0076260953, z: -0.0021462431, w: 0.96257454}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
