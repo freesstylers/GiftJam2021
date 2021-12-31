@@ -33,6 +33,9 @@ public class PlayerMovement : MonoBehaviour
         Vector3 dir = new Vector3(-hor, 0f, -ver);
         dir = playerRot.TransformDirection(dir);
         cController.Move(dir * speed * Time.deltaTime);
+
+        gameObject.GetComponent<Animator>().SetInteger("Horizontal", -(int) dir.x);
+        gameObject.GetComponent<Animator>().SetInteger("Vertical", -(int)dir.z);
     }
 
     void HandleCamera()
