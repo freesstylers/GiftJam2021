@@ -9,4 +9,6 @@ public class DialogueUI
 
     [TextArea(1, 4)]
     public string[] sentences;
+    public bool function = false;
+    public string functionName;
 }

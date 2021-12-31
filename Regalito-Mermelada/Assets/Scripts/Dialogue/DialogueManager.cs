@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
@@ -9,6 +10,7 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     private Queue<string> sentences;
 
+    string func = "";
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +27,18 @@ public class DialogueManager : MonoBehaviour
         }
 
         dialogueText.transform.parent.gameObject.SetActive(true);
+        
+        if (dialogue.name != "")
+        {
+            dialogueText.transform.parent.GetChild(0).gameObject.SetActive(true);
+
+        }
+
+        if (dialogue.function)
+            func = dialogue.functionName;
+
         dialogueText.color = Color.white;
+        FindObjectOfType<PlayerMovement>().canMove = false;
         DisplayNextDialogue();
     }
 
@@ -56,6 +69,24 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
+        FindObjectOfType<PlayerMovement>().canMove = true;
         dialogueText.transform.parent.gameObject.SetActive(false);
+
+        if (func != "")
+        {
+            switch (func)
+            {
+                case "Trees":
+                    ChangeToTrees();
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+
+    void ChangeToTrees()
+    {
+        SceneManager.LoadScene("TreeRoad");
     }
 }

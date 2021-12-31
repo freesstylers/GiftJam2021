@@ -10,9 +10,11 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 1f;
     public CharacterController cController;
     private Transform playerRot;
-
+    
     [Header("Camera behaviour")]
     public float rotSpeed;
+
+    public bool canMove = true;
 
     void Start()
     {
@@ -25,10 +27,21 @@ public class PlayerMovement : MonoBehaviour
         HandleCamera();
     }
 
+
     void HandleMovement()
     {
-        float hor = Input.GetAxis("Horizontal");
-        float ver = Input.GetAxis("Vertical");
+        float hor;
+        float ver;
+
+        if (canMove)
+        {
+            hor = Input.GetAxis("Horizontal");
+            ver = Input.GetAxis("Vertical");
+        }
+        else
+        {
+            hor = ver = 0.0f;
+        }
 
         Vector3 dir = new Vector3(-hor, 0f, -ver);
         dir = playerRot.TransformDirection(dir);
