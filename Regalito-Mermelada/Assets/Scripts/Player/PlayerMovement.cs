@@ -34,15 +34,20 @@ public class PlayerMovement : MonoBehaviour
         dir = playerRot.TransformDirection(dir);
         cController.Move(dir * speed * Time.deltaTime);
 
-        gameObject.GetComponent<Animator>().SetInteger("Horizontal", -(int) dir.x);
-        gameObject.GetComponent<Animator>().SetInteger("Vertical", -(int)dir.z);
+        int signX = (hor == 0f) ? 0 : -(int)Mathf.Sign(hor);
+        int signZ = (ver == 0f) ? 0 : -(int)Mathf.Sign(ver);
+
+        if (Mathf.Abs(hor) >= Mathf.Abs(ver)) signZ = 0;
+        else signX = 0;
+
+        gameObject.GetComponent<Animator>().SetInteger("Horizontal", signX);
+        gameObject.GetComponent<Animator>().SetInteger("Vertical", signZ);
     }
 
     void HandleCamera()
     {
-        float l = Convert.ToInt32(Input.GetKey(KeyCode.Q));
-        float r = Convert.ToInt32(Input.GetKey(KeyCode.E));
+        float hor = Input.GetAxis("CamHorizontal");
 
-        playerRot.Rotate(Vector3.up, (r - l) * rotSpeed);
+        playerRot.Rotate(Vector3.up, -hor * rotSpeed);
     }
 }
