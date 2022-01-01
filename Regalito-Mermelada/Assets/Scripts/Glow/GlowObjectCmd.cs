@@ -8,6 +8,8 @@ public class GlowObjectCmd : MonoBehaviour
 
     public bool running = true;
 
+    bool off = false;
+
 	public Renderer[] Renderers
 	{
 		get;
@@ -30,12 +32,10 @@ public class GlowObjectCmd : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (!off && other.tag == "Player")
         {
             _targetColor = GlowColor;
             running = true;
-
-			GetComponent<DialogueTrigger>().TriggerDialogue();
 		}
     }
 
@@ -46,6 +46,13 @@ public class GlowObjectCmd : MonoBehaviour
             _targetColor = Color.black;
             running = true;
         }
+    }
+
+    public void TurnOff()
+    {
+        _targetColor = Color.black;
+        running = true;
+        off = true;
     }
 
 	/// <summary>
