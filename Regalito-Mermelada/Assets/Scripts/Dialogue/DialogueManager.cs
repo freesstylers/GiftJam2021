@@ -71,12 +71,15 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-
         StartCoroutine(delay());
     }
 
     IEnumerator delay()
     {
+
+        FindObjectOfType<PlayerMovement>().canMove = true;
+        dialogueText.transform.parent.gameObject.SetActive(false);
+
         yield return new WaitForSeconds(0.5f);
 
         if (currentObject)
@@ -84,9 +87,6 @@ public class DialogueManager : MonoBehaviour
             currentObject.DialogueEnd();
             currentObject = null;
         }
-
-        FindObjectOfType<PlayerMovement>().canMove = true;
-        dialogueText.transform.parent.gameObject.SetActive(false);
 
         if (func != "")
         {

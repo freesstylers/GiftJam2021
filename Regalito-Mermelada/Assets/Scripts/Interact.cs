@@ -8,6 +8,8 @@ public class Interact : MonoBehaviour
 
     public GameObject mecano = null;
 
+    public bool isTalking = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +22,7 @@ public class Interact : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            if(currentInteractable)
+            if(currentInteractable && !isTalking)
             {
                 try
                 {
@@ -29,6 +31,8 @@ public class Interact : MonoBehaviour
                     currentInteractable.TurnOff();
 
                     mecano.SetActive(false);
+
+                    isTalking = true;
                 }
                 catch (System.Exception e)
                 {
@@ -38,21 +42,45 @@ public class Interact : MonoBehaviour
         }
     }
 
+    public void RefreshState()
+    {
+        bool canInteract = currentInteractable && currentInteractable.canInteract;
+
+        if (!canInteract)
+            TurnOff();
+        else
+            TurnOn();
+    }
+
+    public void TurnOn()
+    {
+        mecano.SetActive(currentInteractable.canInteract);
+
+        isTalking = false;
+    }
+
+    public void TurnOff()
+    {
+        currentInteractable = null;
+        mecano.SetActive(false);
+
+        isTalking = false;
+    }
+
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Object")
         {
-            currentInteractable = other.GetComponent<InteractableObject>();
-            mecano.SetActive(currentInteractable.canInteract);
+            //TurnOn();
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Object" && currentInteractable.gameObject == other.gameObject)
+        if (other.tag == "Object" && (!currentInteractable || currentInteractable.gameObject == other.gameObject))
         {
-            currentInteractable = null;
-            mecano.SetActive(false);
+            //TurnOff();
         }
     }
 }

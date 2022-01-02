@@ -15,9 +15,12 @@ public struct DialogueAction
 
 public class InteractableObject : MonoBehaviour
 {
+    [HideInInspector]
     DialogueManager dialogueMan = null;
 
+    [HideInInspector]
     public GlowObjectCmd glowControl;
+    [HideInInspector]
     public DialogueTrigger dialogueTrigger;
 
     public bool displaying = false;
@@ -26,6 +29,9 @@ public class InteractableObject : MonoBehaviour
     public DialogueAction[] actions;
 
     public string flag = "";
+
+    [HideInInspector]
+    public Interact player = null;
 
     // Start is called before the first frame update
     void Start()
@@ -86,16 +92,23 @@ public class InteractableObject : MonoBehaviour
     {
         canInteract = FlagManager.GetKey(flag);
 
-        if (!canInteract)
+        if (!canInteract || !player)
             TurnOff();
         else
             TurnOn();
+
+        if(player)
+            player.RefreshState();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
+            player = other.gameObject.GetComponent<Interact>();
+
+            player.currentInteractable = this;
+
             RefreshState();
         }
     }
@@ -105,6 +118,13 @@ public class InteractableObject : MonoBehaviour
         if (other.tag == "Player")
         {
             glowControl.Exit();
+
+            player.TurnOff();
+
+            if(player.currentInteractable && player.currentInteractable == this.gameObject)
+                player.currentInteractable = null;
+
+            player = null;
         }
     }
 }
