@@ -71,8 +71,13 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        FindObjectOfType<PlayerMovement>().canMove = true;
-        dialogueText.transform.parent.gameObject.SetActive(false);
+
+        StartCoroutine(delay());
+    }
+
+    IEnumerator delay()
+    {
+        yield return new WaitForSeconds(0.5f);
 
         if (currentObject)
         {
@@ -80,11 +85,15 @@ public class DialogueManager : MonoBehaviour
             currentObject = null;
         }
 
+        FindObjectOfType<PlayerMovement>().canMove = true;
+        dialogueText.transform.parent.gameObject.SetActive(false);
+
         if (func != "")
         {
             switch (func)
             {
                 case "Trees":
+                    FindObjectOfType<PlayerMovement>().canMove = false;
                     ChangeToTrees();
                     break;
                 default:

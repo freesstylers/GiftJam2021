@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.21122617, g: 0.22590736, b: 0.22858402, a: 1}
+  m_IndirectSpecularColor: {r: 0.21122324, g: 0.22590515, b: 0.22858235, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -258,6 +258,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &632481318 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2577574477455051287, guid: 45d339c27a4e7bd42a9818bd894df86f, type: 3}
+  m_PrefabInstance: {fileID: 1503309093}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &632481321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632481318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7daa8671fc652449b20075b5c07fb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LerpFactor: 10
+  LerpTime: 4
 --- !u!1 &654051331
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,7 +629,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477983624}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -67.66, y: 1.52, z: 3.19}
+  m_LocalPosition: {x: -72.2, y: 1.52, z: 17.7}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_Children:
   - {fileID: 654051334}
@@ -820,7 +839,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -404.75}
+  m_AnchoredPosition: {x: 0, y: -200}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1802496544
@@ -1062,7 +1081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1281,7 +1300,7 @@ MonoBehaviour:
   actions:
   - flag: Poggers
     item: 
-    action: 0
+    action: 1
   flag: Poggers
 --- !u!1001 &2118728757308551619
 PrefabInstance:
@@ -1296,7 +1315,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2400164654981616319, guid: d7798879dacbd0c419a7a80e8d2d3196, type: 3}
       propertyPath: flags.m_keys.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2400164654981616319, guid: d7798879dacbd0c419a7a80e8d2d3196, type: 3}
       propertyPath: flags.values.Array.size
@@ -1308,7 +1327,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2400164654981616319, guid: d7798879dacbd0c419a7a80e8d2d3196, type: 3}
       propertyPath: flags.m_values.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2400164654981616319, guid: d7798879dacbd0c419a7a80e8d2d3196, type: 3}
       propertyPath: flags.m_keys.Array.data[0]
@@ -1320,6 +1339,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2400164654981616319, guid: d7798879dacbd0c419a7a80e8d2d3196, type: 3}
       propertyPath: flags.m_values.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400164654981616319, guid: d7798879dacbd0c419a7a80e8d2d3196, type: 3}
+      propertyPath: flags.m_values.Array.data[1]
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2819779879095844768, guid: d7798879dacbd0c419a7a80e8d2d3196, type: 3}
