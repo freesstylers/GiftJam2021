@@ -33,7 +33,7 @@ public class DialogueManager : MonoBehaviour
         if (dialogue.name != "")
         {
             dialogueText.transform.parent.GetChild(0).gameObject.SetActive(true);
-
+            dialogueText.transform.parent.GetComponentInChildren<DialogueBoxSprite>().setSprite(dialogue);
         }
 
         if (dialogue.function)

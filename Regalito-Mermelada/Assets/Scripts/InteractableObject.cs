@@ -5,11 +5,11 @@ using UnityEngine;
 [System.Serializable]
 public struct DialogueAction
 {
-    public enum Type { FLAGOFF, FLAGON, GIVEITEM, NEXTDIALOGUE };
-
+    public enum Type { FLAGOFF, FLAGON, GIVEITEM, NEXTDIALOGUE, FLAGCHANGE, DESTROYOBJECT };
+    public Type action;
     public string flag;
     public string item;
-    public Type action;
+    public GameObject[] gO;
 }
 
 [System.Serializable]
@@ -34,6 +34,7 @@ public class InteractableObject : MonoBehaviour
     public ActionDictionary actions;
 
     public string flag = "";
+    public bool invert = false;
 
     [HideInInspector]
     public Interact player = null;
@@ -70,24 +71,37 @@ public class InteractableObject : MonoBehaviour
 
     public void DialogueEnd()
     {
-        foreach (DialogueAction action in actions[flag])
+        if (actions.ContainsKey(flag))
         {
-            switch (action.action)
+            foreach (DialogueAction action in actions[flag])
             {
-                case DialogueAction.Type.FLAGOFF:
-                    FlagManager.SetKey(action.flag, false);
-                    break;
-                case DialogueAction.Type.FLAGON:
-                    FlagManager.SetKey(action.flag, true);
-                    break;
-                case DialogueAction.Type.GIVEITEM:
-                    break;
-                case DialogueAction.Type.NEXTDIALOGUE:
-                    dialogueTrigger.NextDialogue();
-                    flag = action.flag;
-                    break;
-                default:
-                    break;
+                switch (action.action)
+                {
+                    case DialogueAction.Type.FLAGOFF:
+                        FlagManager.SetKey(action.flag, false);
+                        break;
+                    case DialogueAction.Type.FLAGON:
+                        FlagManager.SetKey(action.flag, true);
+                        break;
+                    case DialogueAction.Type.GIVEITEM:
+                        break;
+                    case DialogueAction.Type.NEXTDIALOGUE:
+                        dialogueTrigger.NextDialogue();
+                        flag = action.flag;
+                        break;
+                    case DialogueAction.Type.FLAGCHANGE:
+                        flag = action.flag;
+                        break;
+                    case DialogueAction.Type.DESTROYOBJECT:
+                        if (action.gO.Length > 0)
+                        {
+                            foreach (GameObject g in action.gO)
+                                g.SetActive(false);
+                        }
+                        break;
+                    default:
+                        break;
+                }       
             }
         }
 
@@ -100,6 +114,9 @@ public class InteractableObject : MonoBehaviour
     void RefreshState()
     {
         canInteract = FlagManager.GetKey(flag);
+
+        if (invert)
+            canInteract = !canInteract;
 
         if (!canInteract || !player)
             TurnOff();
