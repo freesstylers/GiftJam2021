@@ -10,6 +10,8 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     private Queue<string> sentences;
 
+    public InteractableObject currentObject = null;
+
     string func = "";
     // Start is called before the first frame update
     void Start()
@@ -71,6 +73,12 @@ public class DialogueManager : MonoBehaviour
     {
         FindObjectOfType<PlayerMovement>().canMove = true;
         dialogueText.transform.parent.gameObject.SetActive(false);
+
+        if (currentObject)
+        {
+            currentObject.DialogueEnd();
+            currentObject = null;
+        }
 
         if (func != "")
         {

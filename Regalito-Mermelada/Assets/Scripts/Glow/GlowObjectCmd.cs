@@ -30,22 +30,19 @@ public class GlowObjectCmd : MonoBehaviour
 		GlowController.RegisterObject(this);
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void Enter()
     {
-        if (!off && other.tag == "Player")
+        if (!off)
         {
             _targetColor = GlowColor;
             running = true;
 		}
     }
 
-    private void OnTriggerExit(Collider other)
+    public void Exit()
     {
-        if (other.tag == "Player")
-        {
-            _targetColor = Color.black;
-            running = true;
-        }
+        _targetColor = Color.black;
+        running = true;
     }
 
     public void TurnOff()
@@ -55,10 +52,16 @@ public class GlowObjectCmd : MonoBehaviour
         off = true;
     }
 
-	/// <summary>
-	/// Update color, disable self if we reach our target color.
-	/// </summary>
-	private void Update()
+    public void TurnOn()
+    {
+        off = false;
+        Enter();
+    }
+
+    /// <summary>
+    /// Update color, disable self if we reach our target color.
+    /// </summary>
+    private void Update()
 	{
         if(running)
         {

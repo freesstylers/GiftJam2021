@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public class FlagDictionary : SerializableDictionary<string, bool> { }
+
 public class FlagManager : MonoBehaviour
 {
     //get público, set privado
     static public FlagManager instance { get; private set; }
 
-    public Dictionary<string, bool> flags;
+    public FlagDictionary flags;
 
     // Start is called before the first frame update
     void Start()
@@ -24,18 +27,18 @@ public class FlagManager : MonoBehaviour
             // hacemos que el objeto no se elimine al cambiar de escena
             DontDestroyOnLoad(this.gameObject);
 
-            instance.flags = new Dictionary<string, bool>();
+            //instance.flags = new UDictionary<string, bool>();
         }
     }
 
     // Update is called once per frame
-    static bool GetKey(string key)
+    public static bool GetKey(string key)
     {
         return (instance.flags.ContainsKey(key) && instance.flags[key]);
     }
 
     // Update is called once per frame
-    static void SetKey(string key, bool value)
+    public static void SetKey(string key, bool value)
     {
         instance.flags[key] = value;
     }

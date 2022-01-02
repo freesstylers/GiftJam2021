@@ -6,6 +6,8 @@ public class Interact : MonoBehaviour
 {
     public InteractableObject currentInteractable = null;
 
+    public GameObject mecano = null;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,13 +25,15 @@ public class Interact : MonoBehaviour
                 try
                 {
                     currentInteractable.TriggerDialogue();
+
+                    currentInteractable.TurnOff();
+
+                    mecano.SetActive(false);
                 }
                 catch (System.Exception e)
                 {
                     Debug.Log(e);
                 }
-
-                currentInteractable.TurnOff();
             }
         }
     }
@@ -41,6 +45,7 @@ public class Interact : MonoBehaviour
         if (other.tag == "Object")
         {
             currentInteractable = other.GetComponent<InteractableObject>();
+            mecano.SetActive(currentInteractable.canInteract);
         }
     }
 
@@ -49,6 +54,7 @@ public class Interact : MonoBehaviour
         if (other.tag == "Object" && currentInteractable.gameObject == other.gameObject)
         {
             currentInteractable = null;
+            mecano.SetActive(false);
         }
     }
 }
