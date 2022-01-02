@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 dir = new Vector3(-hor, 0f, -ver);
         dir = playerRot.TransformDirection(dir);
-        cController.Move(dir * speed * Time.deltaTime);
+        cController.SimpleMove(dir * speed);
 
         int signX = (hor == 0f) ? 0 : -(int)Mathf.Sign(hor);
         int signZ = (ver == 0f) ? 0 : -(int)Mathf.Sign(ver);
