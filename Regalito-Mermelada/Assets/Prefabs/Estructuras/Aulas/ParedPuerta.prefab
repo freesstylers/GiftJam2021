@@ -11,6 +11,10 @@ GameObject:
   - component: {fileID: 677306555264349739}
   - component: {fileID: 7961069504608189745}
   - component: {fileID: 2685060795152621574}
+  - component: {fileID: 5563558963075523216}
+  - component: {fileID: 9130208601798481385}
+  - component: {fileID: 4118624147711092681}
+  - component: {fileID: 9043550507626847497}
   m_Layer: 0
   m_Name: ParedPuerta
   m_TagString: Untagged
@@ -43,10 +47,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156946581854317713}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.85, y: 4, z: 0.4}
+  m_Size: {x: 1.8, y: 4, z: 0.4}
   m_Center: {x: 0, y: 2, z: 1.8}
 --- !u!65 &2685060795152621574
 BoxCollider:
@@ -56,11 +60,75 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156946581854317713}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.85, y: 4, z: 0.4}
+  m_Size: {x: 1.8, y: 4, z: 0.4}
   m_Center: {x: 0, y: 2, z: -1.8}
+--- !u!65 &5563558963075523216
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156946581854317713}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8, y: 4, z: 4}
+  m_Center: {x: 0, y: 2, z: 0}
+--- !u!114 &9130208601798481385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156946581854317713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0d19bba371c7f7498d7455e752e2af2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowControl: {fileID: 0}
+  dialogueTrigger: {fileID: 0}
+  displaying: 0
+  canInteract: 1
+  actions: []
+  flag: 
+  player: {fileID: 0}
+--- !u!114 &4118624147711092681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156946581854317713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e215f47f0a98e4046ac61cd9907b6ebd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlowColor: {r: 1, g: 0, b: 0, a: 0}
+  LerpFactor: 10
+  running: 1
+--- !u!114 &9043550507626847497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156946581854317713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae39b50e4ae47634cb88e0873b758b6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences: []
+    function: 0
+    functionName: 
 --- !u!1 &2134962665091606624
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,6 +300,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5057731627841687492}
+  - component: {fileID: 3351601427088249406}
   m_Layer: 0
   m_Name: PuertaNoPomo
   m_TagString: Untagged
@@ -254,6 +323,19 @@ Transform:
   m_Father: {fileID: 677306555264349739}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!65 &3351601427088249406
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5583193270431995262}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 3.5, z: 2}
+  m_Center: {x: 0, y: 2, z: 0.67}
 --- !u!1 &6930233726465134777
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,6 +345,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7739139605530839555}
+  - component: {fileID: 493036641228518268}
   m_Layer: 0
   m_Name: Puerta
   m_TagString: Untagged
@@ -285,6 +368,19 @@ Transform:
   m_Father: {fileID: 677306555264349739}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!65 &493036641228518268
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6930233726465134777}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 3.5, z: 2}
+  m_Center: {x: 0, y: 2, z: -0.67}
 --- !u!1 &9196453749793494088
 GameObject:
   m_ObjectHideFlags: 0

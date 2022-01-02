@@ -119,12 +119,15 @@ public class InteractableObject : MonoBehaviour
         {
             glowControl.Exit();
 
-            player.TurnOff();
+            if (player != null)
+            {
+                player.TurnOff();
 
-            if(player.currentInteractable && player.currentInteractable == this.gameObject)
-                player.currentInteractable = null;
+                if (player.currentInteractable && player.currentInteractable == this.gameObject)
+                    player.currentInteractable = null;
 
-            player = null;
+                player = null;
+            }
         }
     }
 }
