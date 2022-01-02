@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.21122324, g: 0.22590515, b: 0.22858235, a: 1}
+  m_IndirectSpecularColor: {r: 0.21122617, g: 0.22590736, b: 0.22858402, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1178,7 +1178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e215f47f0a98e4046ac61cd9907b6ebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0.6698113, g: 0.16113384, b: 0.6421846, a: 0}
+  GlowColor: {r: 0.5686275, g: 0.2941177, b: 0.8784314, a: 1}
   LerpFactor: 10
   running: 1
 --- !u!65 &2042457267
@@ -1283,11 +1283,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: 
+  - name: 
     sentences:
-    - Javi
-    - Hazme caso
-    - Por favor te lo pido
+    - "Javi co\xF1o"
+    - "L\xE9eme o algo"
+    - ola soi ignacio ja ja funni
+    function: 0
+    functionName: 
+  - name: 
+    sentences:
+    - gonzalo es terf
+    - no se
+    - nya
     function: 0
     functionName: 
 --- !u!114 &2042457273
@@ -1307,9 +1314,21 @@ MonoBehaviour:
   displaying: 0
   canInteract: 1
   actions:
-  - flag: Poggers
-    item: 
-    action: 1
+    m_keys:
+    - Poggers
+    - Doggers
+    m_values:
+    - data:
+      - flag: Doggers
+        item: 
+        action: 1
+      - flag: Doggers
+        item: 
+        action: 3
+    - data:
+      - flag: Doggers
+        item: 
+        action: 0
   flag: Poggers
   player: {fileID: 0}
 --- !u!1001 &2118728757308551619

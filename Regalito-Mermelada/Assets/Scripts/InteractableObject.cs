@@ -5,13 +5,18 @@ using UnityEngine;
 [System.Serializable]
 public struct DialogueAction
 {
-    public enum Type { FLAGOFF, FLAGON, GIVEITEM };
+    public enum Type { FLAGOFF, FLAGON, GIVEITEM, NEXTDIALOGUE };
 
     public string flag;
     public string item;
     public Type action;
-
 }
+
+[System.Serializable]
+public class ActionStorage : SerializableDictionary.Storage<DialogueAction[]> { }
+
+[System.Serializable]
+public class ActionDictionary : SerializableDictionary<string, DialogueAction[], ActionStorage> { }
 
 public class InteractableObject : MonoBehaviour
 {
@@ -26,7 +31,7 @@ public class InteractableObject : MonoBehaviour
     public bool displaying = false;
     public bool canInteract = true;
 
-    public DialogueAction[] actions;
+    public ActionDictionary actions;
 
     public string flag = "";
 
@@ -65,7 +70,7 @@ public class InteractableObject : MonoBehaviour
 
     public void DialogueEnd()
     {
-        foreach (DialogueAction action in actions)
+        foreach (DialogueAction action in actions[flag])
         {
             switch (action.action)
             {
@@ -76,6 +81,10 @@ public class InteractableObject : MonoBehaviour
                     FlagManager.SetKey(action.flag, true);
                     break;
                 case DialogueAction.Type.GIVEITEM:
+                    break;
+                case DialogueAction.Type.NEXTDIALOGUE:
+                    dialogueTrigger.NextDialogue();
+                    flag = action.flag;
                     break;
                 default:
                     break;
