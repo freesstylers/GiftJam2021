@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: fe720e8072fa1f94ab22145faeb5b669
+guid: 18c22763a6f3b06449cc679b8b2fcc51
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6801122814659252236
-    second: Hextor Hexanime Hextech_0
+      213: 7165940466613131458
+    second: corpse_0
   - first:
-      213: 3027010008068056928
-    second: Hextor Hexanime Hextech_1
+      213: -637948739169596578
+    second: corpse_1
   - first:
-      213: -4927581157779913835
-    second: Hextor Hexanime Hextech_2
+      213: 7776826754792875267
+    second: corpse_2
+  - first:
+      213: 6631443929276487865
+    second: corpse_3
+  - first:
+      213: -2839317106449319184
+    second: corpse_4
+  - first:
+      213: -4479196351565194350
+    second: corpse_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -100,13 +109,97 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hextor Hexanime Hextech_0
+      name: corpse_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8921a33e8827360800000000000000
+      internalID: 7165940466613131458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corpse_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b43e0700d8527f0800000000000000
+      internalID: -637948739169596578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corpse_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305ee27eab6dceb60800000000000000
+      internalID: 7776826754792875267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corpse_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b812786e1f970c50800000000000000
+      internalID: 6631443929276487865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corpse_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 80
-        height: 80
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,20 +207,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ff2e6e75de8d91a0800000000000000
-      internalID: -6801122814659252236
+      spriteID: 0faf5619228b898d0800000000000000
+      internalID: -2839317106449319184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hextor Hexanime Hextech_1
+      name: corpse_5
       rect:
         serializedVersion: 2
-        x: 80
+        x: 32
         y: 0
-        width: 80
-        height: 80
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,29 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 067e2768099120a20800000000000000
-      internalID: 3027010008068056928
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hextor Hexanime Hextech_2
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 80
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 593ce906b07bd9bb0800000000000000
-      internalID: -4927581157779913835
+      spriteID: 29b1bb966a2b6d1c0800000000000000
+      internalID: -4479196351565194350
       vertices: []
       indices: 
       edges: []

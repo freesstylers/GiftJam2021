@@ -1,15 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [System.Serializable]
 public struct DialogueAction
 {
-    public enum Type { FLAGOFF, FLAGON, GIVEITEM, NEXTDIALOGUE, FLAGCHANGE, DESTROYOBJECT };
+    public enum Type { FLAGOFF, FLAGON, GIVEITEM, NEXTDIALOGUE, FLAGCHANGE, DESTROYOBJECT, ACTIVATEOBJECT, DEACTIVATECOMPONENT, FUNDIDOANEGRO, TPTO };
     public Type action;
     public string flag;
     public string item;
     public GameObject[] gO;
+    public Component[] components;
+    public Vector3 tpTo;
+    public DialogueUI dialogue;
 }
 
 [System.Serializable]
@@ -98,6 +102,29 @@ public class InteractableObject : MonoBehaviour
                             foreach (GameObject g in action.gO)
                                 g.SetActive(false);
                         }
+                        break;
+                    case DialogueAction.Type.ACTIVATEOBJECT:
+                        if (action.gO.Length > 0)
+                        {
+                            foreach (GameObject g in action.gO)
+                                g.SetActive(true);
+                        }
+                        break;
+                    case DialogueAction.Type.DEACTIVATECOMPONENT:
+                        if (action.components.Length > 0)
+                        {
+                            foreach (Component c in action.components)
+                                Destroy(c);
+                        }
+                        break;
+                    case DialogueAction.Type.FUNDIDOANEGRO:
+                        FindObjectOfType<DialogueManager>().callFadeToBlack(action.dialogue);
+                        break;
+                    case DialogueAction.Type.TPTO:
+                        PlayerMovement p = FindObjectOfType<PlayerMovement>();
+                        p.canMove = false;
+                        p.gameObject.transform.position = action.tpTo;
+                        p.canMove = true;      
                         break;
                     default:
                         break;

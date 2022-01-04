@@ -8,36 +8,45 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     public Text dialogueText;
-    private Queue<string> sentences;
+    private Queue<Sentence> sentences;
 
     public InteractableObject currentObject = null;
 
     string func = "";
+    
+    public GameObject Piso0;
+    public GameObject Piso1;
+    public GameObject Piso2;
+
     // Start is called before the first frame update
     void Start()
     {
-        sentences = new Queue<string>();
+        sentences = new Queue<Sentence>();
     }
 
     public void StartDialogue( DialogueUI dialogue)
     {
         sentences.Clear();
 
-        foreach (string sentence in dialogue.sentences)
+        foreach (Sentence sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
 
         dialogueText.transform.parent.gameObject.SetActive(true);
-        
-        if (dialogue.name != "")
-        {
-            dialogueText.transform.parent.GetChild(0).gameObject.SetActive(true);
-            dialogueText.transform.parent.GetComponentInChildren<DialogueBoxSprite>().setSprite(dialogue);
-        }
+
+        //if (dialogue.name != "")
+        //{
+        //    dialogueText.transform.parent.GetChild(0).gameObject.SetActive(true);
+        //dialogueText.transform.parent.GetComponentInChildren<DialogueBoxSprite>().setSprite(dialogue);
+        //}
+        //else
+        //    dialogueText.transform.parent.GetChild(0).gameObject.SetActive(false);
 
         if (dialogue.function)
             func = dialogue.functionName;
+        else
+            func = null;
 
         dialogueText.color = Color.white;
         FindObjectOfType<PlayerMovement>().canMove = false;
@@ -52,10 +61,26 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        string s = sentences.Dequeue();
+        Sentence s = sentences.Dequeue();
+        string aux = s.sentence;
         StopAllCoroutines();
-        StartCoroutine(typeSentence(s));
-        //dialogueText.text = s;
+        StartCoroutine(typeSentence(aux));
+
+        if (s.sound != null)
+        {
+            GetComponent<AudioSource>().clip = s.sound;
+            GetComponent<AudioSource>().Play();
+        }
+
+        if (s.icon != null)
+        {
+            dialogueText.transform.parent.GetChild(0).gameObject.SetActive(true);
+            dialogueText.transform.parent.GetComponentInChildren<DialogueBoxSprite>().transform.GetComponent<Image>().sprite = s.icon;
+        }
+        else
+        {
+            dialogueText.transform.parent.GetChild(0).gameObject.SetActive(false);
+        }
     }
 
     IEnumerator typeSentence(string s)
@@ -96,6 +121,15 @@ public class DialogueManager : MonoBehaviour
                     FindObjectOfType<PlayerMovement>().canMove = false;
                     ChangeToTrees();
                     break;
+                case "TP":
+                    FindObjectOfType<PlayerMovement>().canMove = false;
+                    FindObjectOfType<PlayerMovement>().transform.position = new Vector3(28.7f, 1.52f, 66.4f);
+                    FindObjectOfType<PlayerMovement>().canMove = true;
+                    break;
+                case "SubirPiso1":
+                    Piso0.SetActive(false);
+                    Piso1.SetActive(true);
+                    break;
                 default:
                     break;
             }
@@ -105,5 +139,35 @@ public class DialogueManager : MonoBehaviour
     void ChangeToTrees()
     {
         SceneManager.LoadScene("TreeRoad");
+    }
+
+    public void callFadeToBlack(DialogueUI dialogue)
+    {
+        StartCoroutine(FadeToBlack(dialogue));
+    }
+
+    IEnumerator FadeToBlack(DialogueUI dialogue)
+    {
+        Color c = new Color(0, 0, 0, 0);
+        Image img = FindObjectOfType<Canvas>().GetComponent<Image>();
+
+        for (int i = 0; i <= 255; i++)
+        {
+            c.a = i;
+            img.color = c;
+            yield return new WaitForSeconds(0.005f);
+        }
+
+        //yield return new WaitForSeconds(0.1f);
+
+        for (int j = 255; j >= 0; j--)
+        {
+            c.a = j;
+            img.color = c;
+            yield return new WaitForSeconds(0.005f);
+        }
+
+        if (dialogue != null)
+            StartDialogue(dialogue);
     }
 }
