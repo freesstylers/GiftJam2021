@@ -18,9 +18,12 @@ public class DialogueManager : MonoBehaviour
     public GameObject Piso1;
     public GameObject Piso2;
 
+    public GameObject Eurico;
+
     // Start is called before the first frame update
     void Start()
     {
+        Eurico = GameObject.Find("Eurico");
         sentences = new Queue<Sentence>();
     }
 
@@ -120,16 +123,27 @@ public class DialogueManager : MonoBehaviour
                     FindObjectOfType<PlayerMovement>().canMove = false;
                     ChangeToTrees();
                     break;
-                case "TP":
-                    PlayerMovement p = FindObjectOfType<PlayerMovement>();
-                    p.canMove = false;
-                    Debug.Log("ee");
-                    p.transform.localPosition = new Vector3(28.7f, 1.52f, 66.4f);
-                    p.canMove = true;
-                    break;
                 case "SubirPiso1":
                     Piso0.SetActive(false);
                     Piso1.SetActive(true);
+                    break;
+                case "BajarPiso0":
+                    Piso1.SetActive(false);
+                    Piso0.SetActive(true);
+                    Eurico.GetComponent<PlayerMovement>().canMove = false;
+                    Eurico.transform.position = new Vector3(40.94f, 1.52f, 48.44f);
+                    Eurico.GetComponent<PlayerMovement>().canMove = true;
+                    break;
+                case "BajarPiso1":
+                    Piso2.SetActive(false);
+                    Piso1.SetActive(true);
+                    break;
+                case "SubirPiso2":
+                    Piso1.SetActive(false);
+                    Piso2.SetActive(true);
+                    break;
+                case "DestroyTrees":
+                    FindObjectOfType<DestroyTrees>().CallDestroyTrees();
                     break;
                 default:
                     break;

@@ -6,7 +6,7 @@ public class DialogueTrigger : MonoBehaviour
 {
     public DialogueUI[] dialogue;
 
-    int currentDialogue = 0;
+    public int currentDialogue = 0;
 
     public void TriggerDialogue(DialogueManager m)
     {

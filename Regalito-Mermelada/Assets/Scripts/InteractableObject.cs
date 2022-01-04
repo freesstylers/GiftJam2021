@@ -6,7 +6,7 @@ using UnityEngine.UI;
 [System.Serializable]
 public struct DialogueAction
 {
-    public enum Type { FLAGOFF, FLAGON, GIVEITEM, NEXTDIALOGUE, FLAGCHANGE, DESTROYOBJECT, ACTIVATEOBJECT, DEACTIVATECOMPONENT, FUNDIDOANEGRO, TPTO };
+    public enum Type { FLAGOFF, FLAGON, GIVEITEM, NEXTDIALOGUE, FLAGCHANGE, DESTROYOBJECT, ACTIVATEOBJECT, DEACTIVATECOMPONENT, FUNDIDOANEGRO, TPTO, CHANGEFLAGTOOBJECT, NEXTDIALOGUETOOBJECT};
     public Type action;
     public string flag;
     public string item;
@@ -125,6 +125,26 @@ public class InteractableObject : MonoBehaviour
                         p.canMove = false;
                         p.gameObject.transform.position = action.tpTo;
                         p.canMove = true;      
+                        break;
+                    case DialogueAction.Type.CHANGEFLAGTOOBJECT:
+                        if (action.gO.Length > 0)
+                        {
+                            foreach (GameObject g in action.gO)
+                            {
+                                if (g.GetComponent<InteractableObject>() != null)
+                                    g.GetComponent<InteractableObject>().flag = action.flag;
+                            }
+                        }
+                        break;
+                    case DialogueAction.Type.NEXTDIALOGUETOOBJECT:
+                        if (action.gO.Length > 0)
+                        {
+                            foreach (GameObject g in action.gO)
+                            {
+                                if (g.GetComponent<DialogueTrigger>() != null)
+                                    g.GetComponent<DialogueTrigger>().currentDialogue++;
+                            }
+                        }
                         break;
                     default:
                         break;
