@@ -652,6 +652,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso0
       objectReference: {fileID: 0}
+    - target: {fileID: 4141419974264989532, guid: 76d4cf7a805f848448c25b26fd0dff20, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4141419974264989535, guid: 76d4cf7a805f848448c25b26fd0dff20, type: 3}
       propertyPath: m_RootOrder
       value: 8

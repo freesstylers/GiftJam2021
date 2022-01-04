@@ -864,6 +864,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1821590777034516155}
     m_Modifications:
+    - target: {fileID: 3946584105791911537, guid: e600728ff63743e4483e129fe12af7d8, type: 3}
+      propertyPath: m_Size.x
+      value: 9.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946584105791911537, guid: e600728ff63743e4483e129fe12af7d8, type: 3}
+      propertyPath: m_Size.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946584105791911537, guid: e600728ff63743e4483e129fe12af7d8, type: 3}
+      propertyPath: m_Size.z
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946584105791911537, guid: e600728ff63743e4483e129fe12af7d8, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8237783276156364755, guid: e600728ff63743e4483e129fe12af7d8, type: 3}
       propertyPath: m_Name
       value: Escalera (3)
@@ -919,6 +935,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8726195500052938089, guid: e600728ff63743e4483e129fe12af7d8, type: 3}
   m_PrefabInstance: {fileID: 5660545554928837968}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4385432976180576899 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8237783276156364755, guid: e600728ff63743e4483e129fe12af7d8, type: 3}
+  m_PrefabInstance: {fileID: 5660545554928837968}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1759143965894594836
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4385432976180576899}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.07, y: 4, z: 6}
+  m_Center: {x: -2.53, y: 6, z: 0}
 --- !u!1001 &7273809621573630842
 PrefabInstance:
   m_ObjectHideFlags: 0

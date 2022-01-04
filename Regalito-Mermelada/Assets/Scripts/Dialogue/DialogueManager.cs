@@ -101,11 +101,10 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator delay()
     {
-
         FindObjectOfType<PlayerMovement>().canMove = true;
         dialogueText.transform.parent.gameObject.SetActive(false);
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.1f);
 
         if (currentObject)
         {
@@ -122,9 +121,11 @@ public class DialogueManager : MonoBehaviour
                     ChangeToTrees();
                     break;
                 case "TP":
-                    FindObjectOfType<PlayerMovement>().canMove = false;
-                    FindObjectOfType<PlayerMovement>().transform.position = new Vector3(28.7f, 1.52f, 66.4f);
-                    FindObjectOfType<PlayerMovement>().canMove = true;
+                    PlayerMovement p = FindObjectOfType<PlayerMovement>();
+                    p.canMove = false;
+                    Debug.Log("ee");
+                    p.transform.localPosition = new Vector3(28.7f, 1.52f, 66.4f);
+                    p.canMove = true;
                     break;
                 case "SubirPiso1":
                     Piso0.SetActive(false);
