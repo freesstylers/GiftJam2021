@@ -59127,7 +59127,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7703256223568477570, guid: 95048315bdeef644e9b40b50531c744c, type: 3}
       propertyPath: dialogue.Array.data[0].functionName
-      value: BajarPiso1
+      value: BajarPiso1A
       objectReference: {fileID: 0}
     - target: {fileID: 7703256223568477570, guid: 95048315bdeef644e9b40b50531c744c, type: 3}
       propertyPath: dialogue.Array.data[0].sentences.Array.data[0].sentence
@@ -62675,7 +62675,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7703256223568477570, guid: 95048315bdeef644e9b40b50531c744c, type: 3}
       propertyPath: dialogue.Array.data[0].functionName
-      value: BajarPiso1
+      value: BajarPiso1B
       objectReference: {fileID: 0}
     - target: {fileID: 7703256223568477570, guid: 95048315bdeef644e9b40b50531c744c, type: 3}
       propertyPath: dialogue.Array.data[0].sentences.Array.data[0].sentence

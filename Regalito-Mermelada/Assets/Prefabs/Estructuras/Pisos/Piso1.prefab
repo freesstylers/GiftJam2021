@@ -67322,7 +67322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4654744922041639848, guid: 95048315bdeef644e9b40b50531c744c, type: 3}
       propertyPath: dialogue.Array.data[0].functionName
-      value: SubirPiso2
+      value: SubirPiso2B
       objectReference: {fileID: 0}
     - target: {fileID: 4654744922041639848, guid: 95048315bdeef644e9b40b50531c744c, type: 3}
       propertyPath: dialogue.Array.data[0].sentences.Array.data[0].sentence
@@ -67338,7 +67338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7703256223568477570, guid: 95048315bdeef644e9b40b50531c744c, type: 3}
       propertyPath: dialogue.Array.data[0].functionName
-      value: BajarPiso0
+      value: BajarPiso0B
       objectReference: {fileID: 0}
     - target: {fileID: 7703256223568477570, guid: 95048315bdeef644e9b40b50531c744c, type: 3}
       propertyPath: dialogue.Array.data[0].sentences.Array.data[0].sentence
@@ -67555,7 +67555,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4654744922041639848, guid: 95048315bdeef644e9b40b50531c744c, type: 3}
       propertyPath: dialogue.Array.data[0].functionName
-      value: SubirPiso2
+      value: SubirPiso2A
       objectReference: {fileID: 0}
     - target: {fileID: 4654744922041639848, guid: 95048315bdeef644e9b40b50531c744c, type: 3}
       propertyPath: dialogue.Array.data[0].sentences.Array.data[0].sentence
@@ -67571,7 +67571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7703256223568477570, guid: 95048315bdeef644e9b40b50531c744c, type: 3}
       propertyPath: dialogue.Array.data[0].functionName
-      value: BajarPiso0
+      value: BajarPiso0A
       objectReference: {fileID: 0}
     - target: {fileID: 7703256223568477570, guid: 95048315bdeef644e9b40b50531c744c, type: 3}
       propertyPath: dialogue.Array.data[0].sentences.Array.data[0].sentence

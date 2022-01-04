@@ -84278,7 +84278,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2623692614782589138, guid: e600728ff63743e4483e129fe12af7d8, type: 3}
       propertyPath: dialogue.Array.data[0].functionName
-      value: SubirPiso1
+      value: SubirPiso1B
       objectReference: {fileID: 0}
     - target: {fileID: 2623692614782589138, guid: e600728ff63743e4483e129fe12af7d8, type: 3}
       propertyPath: dialogue.Array.data[0].sentences.Array.data[0].sentence
@@ -90787,7 +90787,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2623692614782589138, guid: e600728ff63743e4483e129fe12af7d8, type: 3}
       propertyPath: dialogue.Array.data[0].functionName
-      value: SubirPiso1
+      value: SubirPiso1A
       objectReference: {fileID: 0}
     - target: {fileID: 2623692614782589138, guid: e600728ff63743e4483e129fe12af7d8, type: 3}
       propertyPath: dialogue.Array.data[0].sentences.Array.data[0].sentence
@@ -95225,6 +95225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e821cff43017654ba2183bdd2c67a65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trees: []
 --- !u!1001 &8531930335963278998
 PrefabInstance:
   m_ObjectHideFlags: 0
