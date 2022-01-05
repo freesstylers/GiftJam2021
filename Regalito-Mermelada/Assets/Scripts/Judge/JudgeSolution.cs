@@ -1,11 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class JudgeSolution : MonoBehaviour
 {
     int problem; int button;
+    public bool problem0 = false;
+    public bool problem1 = false;
+    public bool problem2 = false;
+    public bool problem3 = false;
+    public bool problem4 = false;
     // Start is called before the first frame update
     bool isCorrect()
     {
@@ -18,31 +24,46 @@ public class JudgeSolution : MonoBehaviour
         {
             case 0:
                 if (button == 6)
+                {
                     ret = true;
+                    problem0 = true;
+                }
                 else
                     ret = false;
                 break;
             case 1:
                 if (button == 2)
+                {
                     ret = true;
+                    problem1 = true;
+                }
                 else
                     ret = false;
                 break;
             case 2:
                 if (button == 1)
+                {
                     ret = true;
+                    problem2 = true;
+                }
                 else
                     ret = false;
                 break;
             case 3:
                 if (button == 0)
+                {
                     ret = true;
+                    problem3 = true;
+                }
                 else
                     ret = false;
                 break;
             case 4:
                 if (button == 3)
+                {
                     ret = true;
+                    problem4 = true;
+                }
                 else
                     ret = false;
                 break;
@@ -107,5 +128,7 @@ public class JudgeSolution : MonoBehaviour
             default:
                 break;
         }
+
+        FindObjectOfType<CheckCompleted>().CheckCompletedFunc();
     }
 }

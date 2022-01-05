@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ActivateProblem : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class ActivateProblem : MonoBehaviour
     {
         int index = transform.GetSiblingIndex();
         GameObject.Find("Canvas/Problems").transform.GetChild(index).gameObject.SetActive(true);    //Activate Problem
+        this.gameObject.GetComponent<Button>().interactable = false;
         GameObject.Find("Canvas/Overview").SetActive(false);    //Deactivate Overview
     }
 }

@@ -2163,7 +2163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7217120761442202983}
   m_Layer: 0
-  m_Name: J.Autonia
+  m_Name: J.Autonia.Matica
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4166,6 +4166,102 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6467369893452349814, guid: b6320b9b69500c246949c724fd2276c3, type: 3}
   m_PrefabInstance: {fileID: 1015659878898058719}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8595122105962106021 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8741587221669169530, guid: b6320b9b69500c246949c724fd2276c3, type: 3}
+  m_PrefabInstance: {fileID: 1015659878898058719}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7711091685766101049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8595122105962106021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e215f47f0a98e4046ac61cd9907b6ebd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlowColor: {r: 0.5686275, g: 0.2941177, b: 0.8784314, a: 1}
+  LerpFactor: 10
+  running: 1
+--- !u!114 &4684933839379085011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8595122105962106021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0d19bba371c7f7498d7455e752e2af2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowControl: {fileID: 0}
+  dialogueTrigger: {fileID: 0}
+  displaying: 0
+  canInteract: 1
+  actions:
+    m_keys: []
+    m_values: []
+  flag: 
+  invert: 0
+  player: {fileID: 0}
+--- !u!114 &87166198090419102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8595122105962106021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae39b50e4ae47634cb88e0873b758b6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+  - sentences:
+    - sentence: "Yo aprob\xE9 mis O"
+      icon: {fileID: 21300000, guid: c9c164df4a945b44285fbf271630980d, type: 3}
+      sound: {fileID: 0}
+    function: 0
+    functionName: 
+  - sentences:
+    - sentence: "Yo aprob\xE9 mis Oposiciones y pensaba que iba a ejercer mi profesi\xF3n
+        de jurista."
+      icon: {fileID: 21300000, guid: c9c164df4a945b44285fbf271630980d, type: 3}
+      sound: {fileID: 0}
+    - sentence: "Y resulta que me han puesto aqu\xED a juzgar programas de inform\xE1tica."
+      icon: {fileID: 21300000, guid: c9c164df4a945b44285fbf271630980d, type: 3}
+      sound: {fileID: 0}
+    - sentence: Y yo no tengo ni idea.
+      icon: {fileID: 21300000, guid: c9c164df4a945b44285fbf271630980d, type: 3}
+      sound: {fileID: 0}
+    - sentence: Por eso digo que "Wrong Answer" y a por el siguiente.
+      icon: {fileID: 21300000, guid: c9c164df4a945b44285fbf271630980d, type: 3}
+      sound: {fileID: 0}
+    - sentence: Pero me he cansado.
+      icon: {fileID: 21300000, guid: c9c164df4a945b44285fbf271630980d, type: 3}
+      sound: {fileID: 0}
+    - sentence: "T\xFA tienes pinta de saber de qu\xE9 va esto."
+      icon: {fileID: 21300000, guid: c9c164df4a945b44285fbf271630980d, type: 3}
+      sound: {fileID: 0}
+    - sentence: Eres silencioso.
+      icon: {fileID: 21300000, guid: c9c164df4a945b44285fbf271630980d, type: 3}
+      sound: {fileID: 0}
+    - sentence: "Y me has ca\xEDdo bien."
+      icon: {fileID: 21300000, guid: c9c164df4a945b44285fbf271630980d, type: 3}
+      sound: {fileID: 0}
+    - sentence: Resuelve los que hay pendientes, y luego sigo yo.
+      icon: {fileID: 21300000, guid: c9c164df4a945b44285fbf271630980d, type: 3}
+      sound: {fileID: 0}
+    - sentence: "Eso, o te quedas aqu\xED para siempre."
+      icon: {fileID: 21300000, guid: c9c164df4a945b44285fbf271630980d, type: 3}
+      sound: {fileID: 0}
+    function: 0
+    functionName: 
+  currentDialogue: 0
 --- !u!1001 &1291597936123304323
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4227,6 +4323,162 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5915201933945222329, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[1].sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.data[0].icon
+      value: 
+      objectReference: {fileID: 4078337195519791386, guid: aed7c1ad6ffddf94989f545e43689fda, type: 3}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.data[1].icon
+      value: 
+      objectReference: {fileID: 4078337195519791386, guid: aed7c1ad6ffddf94989f545e43689fda, type: 3}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.data[2].icon
+      value: 
+      objectReference: {fileID: 4078337195519791386, guid: aed7c1ad6ffddf94989f545e43689fda, type: 3}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.data[3].icon
+      value: 
+      objectReference: {fileID: 4078337195519791386, guid: aed7c1ad6ffddf94989f545e43689fda, type: 3}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.data[6].icon
+      value: 
+      objectReference: {fileID: 4078337195519791386, guid: aed7c1ad6ffddf94989f545e43689fda, type: 3}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.data[7].icon
+      value: 
+      objectReference: {fileID: 3828295826002105163, guid: aed7c1ad6ffddf94989f545e43689fda, type: 3}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.data[8].icon
+      value: 
+      objectReference: {fileID: 4078337195519791386, guid: aed7c1ad6ffddf94989f545e43689fda, type: 3}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[1].sentences.Array.data[0].icon
+      value: 
+      objectReference: {fileID: 3828295826002105163, guid: aed7c1ad6ffddf94989f545e43689fda, type: 3}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[1].sentences.Array.data[1].icon
+      value: 
+      objectReference: {fileID: 4078337195519791386, guid: aed7c1ad6ffddf94989f545e43689fda, type: 3}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[1].sentences.Array.data[2].icon
+      value: 
+      objectReference: {fileID: 4078337195519791386, guid: aed7c1ad6ffddf94989f545e43689fda, type: 3}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[1].sentences.Array.data[3].icon
+      value: 
+      objectReference: {fileID: 4078337195519791386, guid: aed7c1ad6ffddf94989f545e43689fda, type: 3}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[1].sentences.Array.data[4].icon
+      value: 
+      objectReference: {fileID: 4078337195519791386, guid: aed7c1ad6ffddf94989f545e43689fda, type: 3}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[1].sentences.Array.data[5].icon
+      value: 
+      objectReference: {fileID: 4078337195519791386, guid: aed7c1ad6ffddf94989f545e43689fda, type: 3}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[1].sentences.Array.data[6].icon
+      value: 
+      objectReference: {fileID: 4078337195519791386, guid: aed7c1ad6ffddf94989f545e43689fda, type: 3}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[1].sentences.Array.data[7].icon
+      value: 
+      objectReference: {fileID: 3828295826002105163, guid: aed7c1ad6ffddf94989f545e43689fda, type: 3}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[1].sentences.Array.data[8].icon
+      value: 
+      objectReference: {fileID: 4078337195519791386, guid: aed7c1ad6ffddf94989f545e43689fda, type: 3}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.data[0].sentence
+      value: Hola, Eurico
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.data[1].sentence
+      value: "Veo que has conseguido llegar hasta aqu\xED."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.data[2].sentence
+      value: "Nos encontramos ante el lugar m\xE1s oculto de la Facultad."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.data[3].sentence
+      value: "La habitaci\xF3n del Juez Autom\xE1tico."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.data[4].sentence
+      value: Bueno, Jueza.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.data[5].sentence
+      value: "Su nombre completo es Jueza Autonia M\xE1tica."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.data[6].sentence
+      value: "M\xE1s conocida como Jueza Auto.M\xE1tica."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.data[7].sentence
+      value: "PERO SE EST\xC1 NEGANDO A CORREGIR LOS ENV\xCDOS DE LOS ALUMNOS"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.data[8].sentence
+      value: "Intenta hablar t\xFA con ella, a ver si la puedes convencer."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[1].sentences.Array.data[0].sentence
+      value: COMO NO RESUELVAS LOS EJERCICIOS PENDIENTES LA TENEMOS EH
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[1].sentences.Array.data[1].sentence
+      value: "Veo que has conseguido llegar hasta aqu\xED."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[1].sentences.Array.data[2].sentence
+      value: "Nos encontramos ante el lugar m\xE1s oculto de la Facultad."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[1].sentences.Array.data[3].sentence
+      value: "La habitaci\xF3n del Juez Autom\xE1tico."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[1].sentences.Array.data[4].sentence
+      value: Bueno, Jueza.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[1].sentences.Array.data[5].sentence
+      value: "Su nombre completo es Jueza Autonia M\xE1tica."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[1].sentences.Array.data[6].sentence
+      value: "M\xE1s conocida como Jueza Auto.M\xE1tica."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[1].sentences.Array.data[7].sentence
+      value: "PERO SE EST\xC1 NEGANDO A CORREGIR LOS ENV\xCDOS DE LOS ALUMNOS"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[1].sentences.Array.data[8].sentence
+      value: "Intenta hablar t\xFA con ella, a ver si la puedes convencer."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8494916819798398135, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: actions.m_keys.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8494916819798398135, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: actions.m_values.Array.size
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4755,14 +5007,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17b82b854c9e5e14592f65cdbbb1076d, type: 3}
---- !u!4 &6157171725593897139 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 17b82b854c9e5e14592f65cdbbb1076d, type: 3}
-  m_PrefabInstance: {fileID: 5978548788512886616}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6789593855121043977 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 17b82b854c9e5e14592f65cdbbb1076d, type: 3}
+  m_PrefabInstance: {fileID: 5978548788512886616}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6157171725593897139 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 17b82b854c9e5e14592f65cdbbb1076d, type: 3}
   m_PrefabInstance: {fileID: 5978548788512886616}
   m_PrefabAsset: {fileID: 0}
 --- !u!65 &8478703364088335131

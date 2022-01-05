@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -430,6 +430,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &31307025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -683,6 +688,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &49462544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -829,6 +839,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &50818718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1163,6 +1178,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &75864634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1937,6 +1957,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &110929123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2279,6 +2304,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &179537902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2505,6 +2535,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &193210566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3600,6 +3635,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!1 &244646369
 GameObject:
   m_ObjectHideFlags: 0
@@ -4025,6 +4065,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &326311686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4770,7 +4815,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 480.5, y: -35}
+  m_AnchoredPosition: {x: 554.5, y: -35}
   m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &373672828
@@ -5548,6 +5593,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &470240741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5622,7 +5672,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 824.625, y: -35}
+  m_AnchoredPosition: {x: 954.125, y: -35}
   m_SizeDelta: {x: 90, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &490662322
@@ -5976,6 +6026,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &543247904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6407,6 +6462,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &594140499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6791,7 +6851,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 708.25, y: -35}
+  m_AnchoredPosition: {x: 819.25, y: -35}
   m_SizeDelta: {x: 110, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &661089546
@@ -7004,6 +7064,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &702115235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7935,7 +8000,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 384.125, y: -35}
+  m_AnchoredPosition: {x: 439.625, y: -35}
   m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &748656982
@@ -8305,6 +8370,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &795529186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8585,6 +8655,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &796112107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8865,6 +8940,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &801627490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9101,6 +9181,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &827239739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9391,7 +9476,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 287.75, y: -35}
+  m_AnchoredPosition: {x: 324.75, y: -35}
   m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &849490455
@@ -10333,6 +10418,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!1 &914113758
 GameObject:
   m_ObjectHideFlags: 0
@@ -10423,6 +10513,7 @@ GameObject:
   - component: {fileID: 917419433}
   - component: {fileID: 917419432}
   - component: {fileID: 917419431}
+  - component: {fileID: 917419434}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -10495,6 +10586,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &917419434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917419430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 683c1edd049daf142a01e58270b8daaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 604892745}
+  - {fileID: 360237047}
+  - {fileID: 1126876888}
+  - {fileID: 553396}
+  - {fileID: 1361870352}
 --- !u!1 &919303117
 GameObject:
   m_ObjectHideFlags: 0
@@ -10641,6 +10750,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!1 &933944127
 GameObject:
   m_ObjectHideFlags: 0
@@ -10973,6 +11087,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!1 &979891454
 GameObject:
   m_ObjectHideFlags: 0
@@ -11025,6 +11144,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &979891457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11841,6 +11965,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &1011459595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12894,6 +13023,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &1126205687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13352,6 +13486,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &1129626056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13482,7 +13621,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 171.375, y: -35}
+  m_AnchoredPosition: {x: 189.875, y: -35}
   m_SizeDelta: {x: 120, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1142100759
@@ -14227,6 +14366,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!1 &1200505157
 GameObject:
   m_ObjectHideFlags: 0
@@ -15481,7 +15625,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 586.875, y: -35}
+  m_AnchoredPosition: {x: 679.375, y: -35}
   m_SizeDelta: {x: 100, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1288702030
@@ -15855,6 +15999,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &1343642838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16001,6 +16150,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &1345283550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16634,6 +16788,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!1 &1396090477
 GameObject:
   m_ObjectHideFlags: 0
@@ -17458,6 +17617,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &1456068831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18385,6 +18549,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &1558423091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18713,6 +18882,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &1572238689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19607,6 +19781,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &1616609918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19885,6 +20064,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!1 &1670140928
 GameObject:
   m_ObjectHideFlags: 0
@@ -20642,6 +20826,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!1 &1801054408
 GameObject:
   m_ObjectHideFlags: 0
@@ -20750,6 +20939,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &1801054412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21184,6 +21378,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &1806863230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21485,6 +21684,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &1847757746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21710,6 +21914,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &1873047447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22281,6 +22490,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &1916113491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22498,7 +22712,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "J. Auto. M\xE1tico\n"
+  m_text: "J. Auto. M\xE1tica\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -23209,6 +23423,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7baffd94b4344045bf1816aeea57d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problem0: 0
+  problem1: 0
+  problem2: 0
+  problem3: 0
+  problem4: 0
 --- !u!114 &2055038487
 MonoBehaviour:
   m_ObjectHideFlags: 0

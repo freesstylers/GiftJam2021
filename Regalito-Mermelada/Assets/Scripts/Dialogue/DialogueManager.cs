@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Diagnostics;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -124,8 +125,10 @@ public class DialogueManager : MonoBehaviour
         {
             switch (func)
             {
+                case "ChangeToJueza":
+                    ChangeToJueza();
+                    break;
                 case "Trees":
-                    FindObjectOfType<PlayerMovement>().canMove = false;
                     ChangeToTrees();
                     break;
                 case "BajarAscensor":
@@ -133,7 +136,7 @@ public class DialogueManager : MonoBehaviour
                     Eurico.GetComponent<Interact>().currentInteractable.GetComponent<GlowObjectCmd>().running = false;
                     Eurico.GetComponent<Interact>().currentInteractable = null;
                     Eurico.GetComponent<Interact>().mecano.SetActive(false);
-                    Eurico.transform.localPosition = new Vector3(-307f, 1.52f, 40.4f);
+                    Eurico.transform.localPosition = new Vector3(-239.94f, 33.06f, 13.83f);
                     Eurico.GetComponent<CharacterController>().enabled = true;
                     audioSource.clip = song3;
                     audioSource.Play();
@@ -143,7 +146,7 @@ public class DialogueManager : MonoBehaviour
                     Eurico.GetComponent<Interact>().currentInteractable.GetComponent<GlowObjectCmd>().running = false;
                     Eurico.GetComponent<Interact>().currentInteractable = null;
                     Eurico.GetComponent<Interact>().mecano.SetActive(false);
-                    Eurico.transform.localPosition = new Vector3(41f, 1.52f, 35.46f);
+                    Eurico.transform.localPosition = new Vector3(109.14f, 32.72f, 8.73f);
                     Eurico.GetComponent<CharacterController>().enabled = true;
                     audioSource.clip = song1;
                     audioSource.Play();
@@ -153,7 +156,7 @@ public class DialogueManager : MonoBehaviour
                     Eurico.GetComponent<Interact>().currentInteractable.GetComponent<GlowObjectCmd>().running = false;
                     Eurico.GetComponent<Interact>().currentInteractable = null;
                     Eurico.GetComponent<Interact>().mecano.SetActive(false);
-                    Eurico.transform.localPosition = new Vector3(46.51377f, 1.52f, 48.44f);
+                    Eurico.transform.localPosition = new Vector3(113.82f, 32.72f, 22.63f);
                     Eurico.GetComponent<CharacterController>().enabled = true;
                     break;
                 case "BajarPiso0B":
@@ -161,7 +164,7 @@ public class DialogueManager : MonoBehaviour
                     Eurico.GetComponent<Interact>().currentInteractable.GetComponent<GlowObjectCmd>().running = false;
                     Eurico.GetComponent<Interact>().currentInteractable = null;
                     Eurico.GetComponent<Interact>().mecano.SetActive(false);
-                    Eurico.transform.localPosition = new Vector3(-43.87f, 1.52f, 48.44f);
+                    Eurico.transform.localPosition = new Vector3(25.47029f, 32.72f, 22.63f);
                     Eurico.GetComponent<CharacterController>().enabled = true;
                     break;
                 case "SubirPiso1A":
@@ -169,7 +172,7 @@ public class DialogueManager : MonoBehaviour
                     Eurico.GetComponent<Interact>().currentInteractable.GetComponent<GlowObjectCmd>().running = false;
                     Eurico.GetComponent<Interact>().currentInteractable = null;
                     Eurico.GetComponent<Interact>().mecano.SetActive(false);
-                    Eurico.transform.localPosition = new Vector3(227.09f, 11.19f, 30.91f);
+                    Eurico.transform.localPosition = new Vector3(295.342f, 42.21f, 4.92f);
                     Eurico.GetComponent<CharacterController>().enabled = true;
                     break;
                 case "SubirPiso1B":
@@ -177,7 +180,7 @@ public class DialogueManager : MonoBehaviour
                     Eurico.GetComponent<Interact>().currentInteractable.GetComponent<GlowObjectCmd>().running = false;
                     Eurico.GetComponent<Interact>().currentInteractable = null;
                     Eurico.GetComponent<Interact>().mecano.SetActive(false);
-                    Eurico.transform.localPosition = new Vector3(143.27f, 11.0f, 49.04f);
+                    Eurico.transform.localPosition = new Vector3(212.64f, 42.21f, 22.23f);
                     Eurico.GetComponent<CharacterController>().enabled = true;
                     break;
                 case "BajarPiso1A":
@@ -185,7 +188,7 @@ public class DialogueManager : MonoBehaviour
                     Eurico.GetComponent<Interact>().currentInteractable.GetComponent<GlowObjectCmd>().running = false;
                     Eurico.GetComponent<Interact>().currentInteractable = null;
                     Eurico.GetComponent<Interact>().mecano.SetActive(false);
-                    Eurico.transform.position = new Vector3(227.5519f, 11.00361f, 48.78294f);
+                    Eurico.transform.localPosition = new Vector3(295.342f, 42.21f, 22.23f);
                     Eurico.GetComponent<CharacterController>().enabled = true;
                     audioSource.clip = song1;
                     audioSource.Play();
@@ -195,7 +198,7 @@ public class DialogueManager : MonoBehaviour
                     Eurico.GetComponent<Interact>().currentInteractable.GetComponent<GlowObjectCmd>().running = false;
                     Eurico.GetComponent<Interact>().currentInteractable = null;
                     Eurico.GetComponent<Interact>().mecano.SetActive(false);
-                    Eurico.transform.position = new Vector3(144.0755f, 11.0f, 31.59f);
+                    Eurico.transform.localPosition = new Vector3(212.64f, 42.21f, 4.9f);
                     Eurico.GetComponent<CharacterController>().enabled = true;
                     audioSource.clip = song1;
                     audioSource.Play();
@@ -205,7 +208,7 @@ public class DialogueManager : MonoBehaviour
                     Eurico.GetComponent<Interact>().currentInteractable.GetComponent<GlowObjectCmd>().running = false;
                     Eurico.GetComponent<Interact>().currentInteractable = null;
                     Eurico.GetComponent<Interact>().mecano.SetActive(false);
-                    Eurico.transform.position = new Vector3(445.57f, 23.74f, 30.91f);
+                    Eurico.transform.localPosition = new Vector3(514f, 53.94f, 5.27f);
                     Eurico.GetComponent<CharacterController>().enabled = true;
                     audioSource.clip = song2;
                     audioSource.Play();
@@ -215,7 +218,7 @@ public class DialogueManager : MonoBehaviour
                     Eurico.GetComponent<Interact>().currentInteractable.GetComponent<GlowObjectCmd>().running = false;
                     Eurico.GetComponent<Interact>().currentInteractable = null;
                     Eurico.GetComponent<Interact>().mecano.SetActive(false);
-                    Eurico.transform.position = new Vector3(362.9922f, 22.98f, 49.29f);
+                    Eurico.transform.localPosition = new Vector3(430.67f, 53.94f, 23.97f);
                     Eurico.GetComponent<CharacterController>().enabled = true;
                     audioSource.clip = song2;
                     audioSource.Play();
@@ -232,7 +235,34 @@ public class DialogueManager : MonoBehaviour
 
     void ChangeToTrees()
     {
-        SceneManager.LoadScene("TreeRoad");
+        AsyncOperation aO = SceneManager.LoadSceneAsync("TreeRoad", LoadSceneMode.Additive);
+        GameObject.Find("Facultad").SetActive(false);
+
+        StartCoroutine(setActiveSceneTree(aO));
+    }
+
+    IEnumerator setActiveSceneTree(AsyncOperation aO)
+    {
+        while (!aO.isDone)
+            yield return null;
+
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName("TreeRoad"));
+    } 
+    
+    void ChangeToJueza()
+    {
+        AsyncOperation aO = SceneManager.LoadSceneAsync("Judge", LoadSceneMode.Additive);
+        GameObject.Find("Facultad").SetActive(false);
+
+        StartCoroutine(setActiveSceneJueza(aO));
+    }
+
+    IEnumerator setActiveSceneJueza(AsyncOperation aO)
+    {
+        while (!aO.isDone)
+            yield return null;
+
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName("Judge"));
     }
 
     public void callFadeToBlack(DialogueUI dialogue)
@@ -245,21 +275,13 @@ public class DialogueManager : MonoBehaviour
         Color c = new Color(0, 0, 0, 0);
         Image img = FindObjectOfType<Canvas>().GetComponent<Image>();
 
-        for (int i = 0; i <= 255; i++)
-        {
-            c.a = i;
-            img.color = c;
-            yield return new WaitForSeconds(0.005f);
-        }
+        c.a = 255;
+        img.color = c;
 
-        //yield return new WaitForSeconds(0.1f);
-
-        for (int j = 255; j >= 0; j--)
-        {
-            c.a = j;
-            img.color = c;
-            yield return new WaitForSeconds(0.005f);
-        }
+        yield return new WaitForSeconds(0.5f);
+        
+        c.a = 0;
+        img.color = c;
 
         if (dialogue != null)
             StartDialogue(dialogue);

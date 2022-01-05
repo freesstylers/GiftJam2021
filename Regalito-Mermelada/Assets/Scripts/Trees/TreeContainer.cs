@@ -19,7 +19,7 @@ public class TreeContainer : MonoBehaviour
     {
         for (int i = 0; i < trees; i++)
         {
-            GameObject aux = Instantiate(prefab);
+            GameObject aux = Instantiate(prefab, this.transform);
             Vector3 v = new Vector3(0,0,0);
 
             if (left)
