@@ -15,7 +15,6 @@ public class AbundioCadaver : MonoBehaviour
 
     IEnumerator movement()
     {
-
         FindObjectOfType<PlayerMovement>().canMove = false;
 
         while (transform.localPosition != door)

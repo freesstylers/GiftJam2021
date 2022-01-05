@@ -6143,6 +6143,10 @@ PrefabInstance:
       propertyPath: trees.Array.data[5]
       value: 
       objectReference: {fileID: 5847252297273620974}
+    - target: {fileID: 1701113525063404756, guid: 641f07bba10f07b409e2b424debccb5d, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1477983626}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 641f07bba10f07b409e2b424debccb5d, type: 3}
 --- !u!1 &5847252297273620974 stripped
@@ -6203,6 +6207,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5755716788332810515, guid: 3349c4ce36c7dd7448bfd1371ca6c04e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7067565224105597520, guid: 3349c4ce36c7dd7448bfd1371ca6c04e, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
