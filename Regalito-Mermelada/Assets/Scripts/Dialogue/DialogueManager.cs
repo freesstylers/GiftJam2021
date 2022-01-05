@@ -133,7 +133,7 @@ public class DialogueManager : MonoBehaviour
                     Eurico.GetComponent<Interact>().currentInteractable.GetComponent<GlowObjectCmd>().running = false;
                     Eurico.GetComponent<Interact>().currentInteractable = null;
                     Eurico.GetComponent<Interact>().mecano.SetActive(false);
-                    //Eurico.transform.localPosition = new Vector3(46.51377f, 1.52f, 48.44f);
+                    Eurico.transform.localPosition = new Vector3(-307f, 1.52f, 40.4f);
                     Eurico.GetComponent<CharacterController>().enabled = true;
                     audioSource.clip = song3;
                     audioSource.Play();
@@ -143,7 +143,7 @@ public class DialogueManager : MonoBehaviour
                     Eurico.GetComponent<Interact>().currentInteractable.GetComponent<GlowObjectCmd>().running = false;
                     Eurico.GetComponent<Interact>().currentInteractable = null;
                     Eurico.GetComponent<Interact>().mecano.SetActive(false);
-                    //Eurico.transform.localPosition = new Vector3(46.51377f, 1.52f, 48.44f);
+                    Eurico.transform.localPosition = new Vector3(41f, 1.52f, 35.46f);
                     Eurico.GetComponent<CharacterController>().enabled = true;
                     audioSource.clip = song1;
                     audioSource.Play();
