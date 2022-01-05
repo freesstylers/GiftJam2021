@@ -170,6 +170,7 @@ MonoBehaviour:
   dialogueText: {fileID: 593879797}
   song1: {fileID: 8300000, guid: f5947d12596934444ad4762f5db09427, type: 3}
   song2: {fileID: 8300000, guid: 9f88cd2838f801542af0979024d7757e, type: 3}
+  song3: {fileID: 8300000, guid: 42814c4fdecc541409569e46e5f677c3, type: 3}
   audioSource: {fileID: 1626417465}
   currentObject: {fileID: 0}
   Eurico: {fileID: 0}
@@ -2299,6 +2300,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6835413028936923628, guid: a6888df7da2c7634b81c51237b490591, type: 3}
+      propertyPath: dialogue.Array.data[0].function
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6835413028936923628, guid: a6888df7da2c7634b81c51237b490591, type: 3}
+      propertyPath: dialogue.Array.data[0].functionName
+      value: SubirAscensor
+      objectReference: {fileID: 0}
     - target: {fileID: 7217120761442202980, guid: a6888df7da2c7634b81c51237b490591, type: 3}
       propertyPath: m_Name
       value: J.Autonia.Matica
@@ -7037,6 +7046,14 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1477983626}
+    - target: {fileID: 4647776266909749128, guid: 641f07bba10f07b409e2b424debccb5d, type: 3}
+      propertyPath: dialogue.Array.data[0].function
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647776266909749128, guid: 641f07bba10f07b409e2b424debccb5d, type: 3}
+      propertyPath: dialogue.Array.data[0].functionName
+      value: BajarAscensor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 641f07bba10f07b409e2b424debccb5d, type: 3}
 --- !u!1 &4092152731630479856 stripped
