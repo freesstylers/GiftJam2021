@@ -139,7 +139,6 @@ public class DialogueManager : MonoBehaviour
                     Eurico.transform.localPosition = new Vector3(-43.87f, 1.52f, 48.44f);
                     Eurico.GetComponent<CharacterController>().enabled = true;
                     break;
-
                 case "SubirPiso1A":
                     Eurico.GetComponent<CharacterController>().enabled = false;
                     Eurico.GetComponent<Interact>().currentInteractable.GetComponent<GlowObjectCmd>().running = false;
@@ -194,6 +193,7 @@ public class DialogueManager : MonoBehaviour
                 default:
                     break;
             }
+            func = "";
         }
     }
 
