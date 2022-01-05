@@ -124,18 +124,16 @@ public class DialogueManager : MonoBehaviour
                     ChangeToTrees();
                     break;
                 case "BajarPiso0A":
-                    //Piso1.SetActive(false);
-                    //Piso0.SetActive(true);
                     Eurico.GetComponent<CharacterController>().enabled = false;
+                    Eurico.GetComponent<Interact>().currentInteractable.GetComponent<GlowObjectCmd>().running = false;
                     Eurico.GetComponent<Interact>().currentInteractable = null;
                     Eurico.GetComponent<Interact>().mecano.SetActive(false);
-                    Eurico.transform.localPosition = new Vector3(40.94f, 1.52f, 48.44f);
+                    Eurico.transform.localPosition = new Vector3(46.51377f, 1.52f, 48.44f);
                     Eurico.GetComponent<CharacterController>().enabled = true;
                     break;
                 case "BajarPiso0B":
-                    //Piso1.SetActive(false);
-                    //Piso0.SetActive(true);
                     Eurico.GetComponent<CharacterController>().enabled = false;
+                    Eurico.GetComponent<Interact>().currentInteractable.GetComponent<GlowObjectCmd>().running = false;
                     Eurico.GetComponent<Interact>().currentInteractable = null;
                     Eurico.GetComponent<Interact>().mecano.SetActive(false);
                     Eurico.transform.localPosition = new Vector3(-43.87f, 1.52f, 48.44f);
@@ -143,57 +141,51 @@ public class DialogueManager : MonoBehaviour
                     break;
 
                 case "SubirPiso1A":
-                    //Piso0.SetActive(false);
-                    //Piso1.SetActive(true);
                     Eurico.GetComponent<CharacterController>().enabled = false;
+                    Eurico.GetComponent<Interact>().currentInteractable.GetComponent<GlowObjectCmd>().running = false;
                     Eurico.GetComponent<Interact>().currentInteractable = null;
                     Eurico.GetComponent<Interact>().mecano.SetActive(false);
                     Eurico.transform.localPosition = new Vector3(227.09f, 11.19f, 30.91f);
                     Eurico.GetComponent<CharacterController>().enabled = true;
                     break;
                 case "SubirPiso1B":
-                    //Piso0.SetActive(false);
-                    //Piso1.SetActive(true);
                     Eurico.GetComponent<CharacterController>().enabled = false;
+                    Eurico.GetComponent<Interact>().currentInteractable.GetComponent<GlowObjectCmd>().running = false;
                     Eurico.GetComponent<Interact>().currentInteractable = null;
                     Eurico.GetComponent<Interact>().mecano.SetActive(false);
-                    Eurico.transform.localPosition = new Vector3(-40.82f, 1.52f, 48.44f);
+                    Eurico.transform.localPosition = new Vector3(143.27f, 11.0f, 49.04f);
                     Eurico.GetComponent<CharacterController>().enabled = true;
                     break;
                 case "BajarPiso1A":
-                    //Piso2.SetActive(false);
-                    //Piso1.SetActive(true);
                     Eurico.GetComponent<CharacterController>().enabled = false;
+                    Eurico.GetComponent<Interact>().currentInteractable.GetComponent<GlowObjectCmd>().running = false;
                     Eurico.GetComponent<Interact>().currentInteractable = null;
                     Eurico.GetComponent<Interact>().mecano.SetActive(false);
-                    Eurico.transform.position = new Vector3(41.08f, 1.52f, 48.44f);
+                    Eurico.transform.position = new Vector3(227.5519f, 11.00361f, 48.78294f);
                     Eurico.GetComponent<CharacterController>().enabled = true;
                     break;
                 case "BajarPiso1B":
-                    //Piso2.SetActive(false);
-                    //Piso1.SetActive(true);
                     Eurico.GetComponent<CharacterController>().enabled = false;
+                    Eurico.GetComponent<Interact>().currentInteractable.GetComponent<GlowObjectCmd>().running = false;
                     Eurico.GetComponent<Interact>().currentInteractable = null;
                     Eurico.GetComponent<Interact>().mecano.SetActive(false);
-                    Eurico.transform.position = new Vector3(-41.43f, 1.52f, 31.34f);
+                    Eurico.transform.position = new Vector3(144.0755f, 11.0f, 31.59f);
                     Eurico.GetComponent<CharacterController>().enabled = true;
                     break;
                 case "SubirPiso2A":
-                    //Piso1.SetActive(false);
-                    //Piso2.SetActive(true);
                     Eurico.GetComponent<CharacterController>().enabled = false;
+                    Eurico.GetComponent<Interact>().currentInteractable.GetComponent<GlowObjectCmd>().running = false;
                     Eurico.GetComponent<Interact>().currentInteractable = null;
                     Eurico.GetComponent<Interact>().mecano.SetActive(false);
                     Eurico.transform.position = new Vector3(445.57f, 23.74f, 30.91f);
                     Eurico.GetComponent<CharacterController>().enabled = true;
                     break;
                 case "SubirPiso2B":
-                    //Piso1.SetActive(false);
-                    //Piso2.SetActive(true);
                     Eurico.GetComponent<CharacterController>().enabled = false;
+                    Eurico.GetComponent<Interact>().currentInteractable.GetComponent<GlowObjectCmd>().running = false;
                     Eurico.GetComponent<Interact>().currentInteractable = null;
                     Eurico.GetComponent<Interact>().mecano.SetActive(false);
-                    Eurico.transform.position = new Vector3(-41.43f, 1.52f, 48.44f);
+                    Eurico.transform.position = new Vector3(362.9922f, 22.98f, 49.29f);
                     Eurico.GetComponent<CharacterController>().enabled = true;
                     break;
                 case "DestroyTrees":
