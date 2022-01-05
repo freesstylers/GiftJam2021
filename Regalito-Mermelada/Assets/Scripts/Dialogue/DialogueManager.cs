@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour
 
     public AudioClip song1;
     public AudioClip song2;
+    public AudioClip song3;
     public AudioSource audioSource;
 
     public InteractableObject currentObject = null;
@@ -126,6 +127,26 @@ public class DialogueManager : MonoBehaviour
                 case "Trees":
                     FindObjectOfType<PlayerMovement>().canMove = false;
                     ChangeToTrees();
+                    break;
+                case "BajarAscensor":
+                    Eurico.GetComponent<CharacterController>().enabled = false;
+                    Eurico.GetComponent<Interact>().currentInteractable.GetComponent<GlowObjectCmd>().running = false;
+                    Eurico.GetComponent<Interact>().currentInteractable = null;
+                    Eurico.GetComponent<Interact>().mecano.SetActive(false);
+                    //Eurico.transform.localPosition = new Vector3(46.51377f, 1.52f, 48.44f);
+                    Eurico.GetComponent<CharacterController>().enabled = true;
+                    audioSource.clip = song3;
+                    audioSource.Play();
+                    break;
+                case "SubirAscensor":
+                    Eurico.GetComponent<CharacterController>().enabled = false;
+                    Eurico.GetComponent<Interact>().currentInteractable.GetComponent<GlowObjectCmd>().running = false;
+                    Eurico.GetComponent<Interact>().currentInteractable = null;
+                    Eurico.GetComponent<Interact>().mecano.SetActive(false);
+                    //Eurico.transform.localPosition = new Vector3(46.51377f, 1.52f, 48.44f);
+                    Eurico.GetComponent<CharacterController>().enabled = true;
+                    audioSource.clip = song1;
+                    audioSource.Play();
                     break;
                 case "BajarPiso0A":
                     Eurico.GetComponent<CharacterController>().enabled = false;
