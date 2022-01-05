@@ -722,7 +722,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477983624}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 216.23, y: 36.7, z: 67.75}
+  m_LocalPosition: {x: 221.55, y: 13.41, z: 63.58}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_Children:
   - {fileID: 654051334}
@@ -1409,6 +1409,22 @@ PrefabInstance:
       propertyPath: GlowColor.r
       value: 0.5686275
       objectReference: {fileID: 0}
+    - target: {fileID: 1210432841281730202, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Size.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210432841281730202, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210432841281730202, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Center.x
+      value: 5.6843365e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210432841281730202, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Center.z
+      value: -1.5999999
+      objectReference: {fileID: 0}
     - target: {fileID: 1713634073007006077, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
       propertyPath: GlowColor.a
       value: 1
@@ -1656,11 +1672,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5420669882735526773, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
       propertyPath: actions.m_values.Array.data[1].data.Array.data[1].flag
-      value: Enrique2
+      value: Enrique3
       objectReference: {fileID: 0}
     - target: {fileID: 5420669882735526773, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
       propertyPath: actions.m_values.Array.data[1].data.Array.data[2].flag
-      value: Enrique2
+      value: Enrique3
       objectReference: {fileID: 0}
     - target: {fileID: 5420669882735526773, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
       propertyPath: actions.m_values.Array.data[1].data.Array.data[3].flag
@@ -1750,6 +1766,22 @@ PrefabInstance:
       propertyPath: actions.m_values.Array.data[1].data.Array.data[3].gO.Array.data[1]
       value: 
       objectReference: {fileID: 2244197519617876171}
+    - target: {fileID: 5679939328155603466, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Size.x
+      value: 2.6279504
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679939328155603466, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Size.z
+      value: 3.2745807
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679939328155603466, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Center.x
+      value: 0.41397536
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679939328155603466, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Center.z
+      value: -0.36270982
+      objectReference: {fileID: 0}
     - target: {fileID: 5788607190404617053, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
       propertyPath: flag
       value: 
@@ -1927,6 +1959,22 @@ PrefabInstance:
       value: Encima seguro que no te atreves a cruzar de Aula y los alumnos de fuera
         tienen que tocar a la puerta para traerme tu respuesta.
       objectReference: {fileID: 0}
+    - target: {fileID: 6626048874285607853, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7193933800059069476, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Size.x
+      value: 2.4841728
+      objectReference: {fileID: 0}
+    - target: {fileID: 7193933800059069476, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Center.x
+      value: 0.34208643
+      objectReference: {fileID: 0}
+    - target: {fileID: 7193933800059069476, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Center.z
+      value: -1.3086278e-15
+      objectReference: {fileID: 0}
     - target: {fileID: 7280343132764306875, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
       propertyPath: dialogue.Array.size
       value: 1
@@ -2063,6 +2111,42 @@ PrefabInstance:
       propertyPath: actions.m_values.Array.data[0].data.Array.data[2].gO.Array.data[0]
       value: 
       objectReference: {fileID: 534728188}
+    - target: {fileID: 7898732479478975915, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Size.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7898732479478975915, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7898732479478975915, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Center.x
+      value: -5.6843365e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7898732479478975915, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Center.z
+      value: 1.5999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8699452232715252748, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Size.x
+      value: 2.5744908
+      objectReference: {fileID: 0}
+    - target: {fileID: 8699452232715252748, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Size.z
+      value: 3.1158001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8699452232715252748, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8699452232715252748, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Center.x
+      value: 0.38724542
+      objectReference: {fileID: 0}
+    - target: {fileID: 8699452232715252748, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Center.z
+      value: 0.4421001
+      objectReference: {fileID: 0}
     - target: {fileID: 9030717287192651123, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
       propertyPath: flag
       value: Pita1
@@ -2101,11 +2185,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9030717287192651123, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
       propertyPath: actions.m_values.Array.data[1].data.Array.data[0].flag
-      value: Pita2
+      value: Pita3
       objectReference: {fileID: 0}
     - target: {fileID: 9030717287192651123, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
       propertyPath: actions.m_values.Array.data[1].data.Array.data[1].flag
-      value: Pita2
+      value: Pita3
       objectReference: {fileID: 0}
     - target: {fileID: 9030717287192651123, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
       propertyPath: actions.m_values.Array.data[1].data.Array.data[2].flag
