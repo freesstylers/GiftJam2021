@@ -10,6 +10,10 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     private Queue<Sentence> sentences;
 
+    public AudioClip song1;
+    public AudioClip song2;
+    public AudioSource audioSource;
+
     public InteractableObject currentObject = null;
 
     string func = "";
@@ -162,6 +166,8 @@ public class DialogueManager : MonoBehaviour
                     Eurico.GetComponent<Interact>().mecano.SetActive(false);
                     Eurico.transform.position = new Vector3(227.5519f, 11.00361f, 48.78294f);
                     Eurico.GetComponent<CharacterController>().enabled = true;
+                    audioSource.clip = song1;
+                    audioSource.Play();
                     break;
                 case "BajarPiso1B":
                     Eurico.GetComponent<CharacterController>().enabled = false;
@@ -170,6 +176,8 @@ public class DialogueManager : MonoBehaviour
                     Eurico.GetComponent<Interact>().mecano.SetActive(false);
                     Eurico.transform.position = new Vector3(144.0755f, 11.0f, 31.59f);
                     Eurico.GetComponent<CharacterController>().enabled = true;
+                    audioSource.clip = song1;
+                    audioSource.Play();
                     break;
                 case "SubirPiso2A":
                     Eurico.GetComponent<CharacterController>().enabled = false;
@@ -178,6 +186,8 @@ public class DialogueManager : MonoBehaviour
                     Eurico.GetComponent<Interact>().mecano.SetActive(false);
                     Eurico.transform.position = new Vector3(445.57f, 23.74f, 30.91f);
                     Eurico.GetComponent<CharacterController>().enabled = true;
+                    audioSource.clip = song2;
+                    audioSource.Play();
                     break;
                 case "SubirPiso2B":
                     Eurico.GetComponent<CharacterController>().enabled = false;
@@ -186,6 +196,8 @@ public class DialogueManager : MonoBehaviour
                     Eurico.GetComponent<Interact>().mecano.SetActive(false);
                     Eurico.transform.position = new Vector3(362.9922f, 22.98f, 49.29f);
                     Eurico.GetComponent<CharacterController>().enabled = true;
+                    audioSource.clip = song2;
+                    audioSource.Play();
                     break;
                 case "DestroyTrees":
                     FindObjectOfType<DestroyTrees>().CallDestroyTrees();
