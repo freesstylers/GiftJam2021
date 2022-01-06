@@ -408,7 +408,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
       propertyPath: dialogue.Array.size
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.data[0].icon
+      value: 
+      objectReference: {fileID: 4078337195519791386, guid: aed7c1ad6ffddf94989f545e43689fda, type: 3}
+    - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.data[0].sentence
+      value: Gracias por ayudarnos a atrapar al Criminal.
       objectReference: {fileID: 0}
     - target: {fileID: 8494916819798398135, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
       propertyPath: actions.m_keys.Array.size
@@ -1645,8 +1657,22 @@ MonoBehaviour:
   displaying: 0
   canInteract: 1
   actions:
-    m_keys: []
-    m_values: []
+    m_keys:
+    - 
+    m_values:
+    - data:
+      - action: 5
+        flag: 
+        item: 
+        gO:
+        - {fileID: 8123325202727017710}
+        - {fileID: 8123325202727017709}
+        components: []
+        tpTo: {x: 0, y: 0, z: 0}
+        dialogue:
+          sentences: []
+          function: 0
+          functionName: 
   flag: 
   invert: 0
   player: {fileID: 0}
@@ -1665,6 +1691,19 @@ MonoBehaviour:
   GlowColor: {r: 0.5686275, g: 0.2941177, b: 0.8784314, a: 1}
   LerpFactor: 10
   running: 1
+--- !u!65 &1266116030
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266116026}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1268805255
 GameObject:
   m_ObjectHideFlags: 0
@@ -2252,72 +2291,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 507305393998149589, guid: 74f4f8295da0ea94caba8ee219bb61ac, type: 3}
   m_PrefabInstance: {fileID: 1681361899}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1681361901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1681361900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e215f47f0a98e4046ac61cd9907b6ebd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GlowColor: {r: 0.5686275, g: 0.2941177, b: 0.8784314, a: 1}
-  LerpFactor: 10
-  running: 1
---- !u!114 &1681361902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1681361900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae39b50e4ae47634cb88e0873b758b6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-  - sentences:
-    - sentence: Ahora mismo estamos monitorizando estas 2 aulas.
-      icon: {fileID: 0}
-      sound: {fileID: 0}
-    - sentence: Estamos detectando una gran cantidad de conexiones a Internet.
-      icon: {fileID: 0}
-      sound: {fileID: 0}
-    - sentence: "Y todas a una misma direcci\xF3n..."
-      icon: {fileID: 0}
-      sound: {fileID: 0}
-    - sentence: Todo cuanto menos sospechoso.
-      icon: {fileID: 0}
-      sound: {fileID: 0}
-    function: 0
-    functionName: 
-  currentDialogue: 0
---- !u!114 &1681361903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1681361900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0d19bba371c7f7498d7455e752e2af2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  glowControl: {fileID: 0}
-  dialogueTrigger: {fileID: 0}
-  displaying: 0
-  canInteract: 1
-  actions:
-    m_keys: []
-    m_values: []
-  flag: 
-  invert: 0
-  player: {fileID: 0}
 --- !u!1 &1710683347 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1824721337448506564, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
@@ -2502,72 +2475,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 507305393998149589, guid: 74f4f8295da0ea94caba8ee219bb61ac, type: 3}
   m_PrefabInstance: {fileID: 1835929811}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1835929813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835929812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e215f47f0a98e4046ac61cd9907b6ebd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GlowColor: {r: 0.5686275, g: 0.2941177, b: 0.8784314, a: 1}
-  LerpFactor: 10
-  running: 1
---- !u!114 &1835929814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835929812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae39b50e4ae47634cb88e0873b758b6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-  - sentences:
-    - sentence: Ahora mismo estamos monitorizando estas 2 aulas.
-      icon: {fileID: 0}
-      sound: {fileID: 0}
-    - sentence: Estamos detectando una gran cantidad de conexiones a Internet.
-      icon: {fileID: 0}
-      sound: {fileID: 0}
-    - sentence: "Y todas a una misma direcci\xF3n..."
-      icon: {fileID: 0}
-      sound: {fileID: 0}
-    - sentence: Todo cuanto menos sospechoso.
-      icon: {fileID: 0}
-      sound: {fileID: 0}
-    function: 0
-    functionName: 
-  currentDialogue: 0
---- !u!114 &1835929815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835929812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0d19bba371c7f7498d7455e752e2af2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  glowControl: {fileID: 0}
-  dialogueTrigger: {fileID: 0}
-  displaying: 0
-  canInteract: 1
-  actions:
-    m_keys: []
-    m_values: []
-  flag: 
-  invert: 0
-  player: {fileID: 0}
 --- !u!1 &1872934280 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3564180303538842153, guid: 3349c4ce36c7dd7448bfd1371ca6c04e, type: 3}
@@ -9599,3 +9506,13 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7067565224105597520, guid: 3349c4ce36c7dd7448bfd1371ca6c04e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3349c4ce36c7dd7448bfd1371ca6c04e, type: 3}
+--- !u!1 &8123325202727017709 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1166703622307627214, guid: 3349c4ce36c7dd7448bfd1371ca6c04e, type: 3}
+  m_PrefabInstance: {fileID: 8123325202727017708}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8123325202727017710 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4424409134953088265, guid: 3349c4ce36c7dd7448bfd1371ca6c04e, type: 3}
+  m_PrefabInstance: {fileID: 8123325202727017708}
+  m_PrefabAsset: {fileID: 0}
