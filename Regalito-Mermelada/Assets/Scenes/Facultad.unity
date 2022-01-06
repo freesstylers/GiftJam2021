@@ -1661,8 +1661,9 @@ Transform:
   - {fileID: 1613528982}
   - {fileID: 803305045}
   - {fileID: 1626417466}
+  - {fileID: 1477983626}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &141508015
 GameObject:
@@ -4563,7 +4564,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &364515063
 MonoBehaviour:
@@ -5619,8 +5620,8 @@ MonoBehaviour:
     - sentence: El minijuego estaba guapo, palabrita.
       icon: {fileID: 0}
       sound: {fileID: 0}
-    function: 1
-    functionName: ChangeToJueza
+    function: 0
+    functionName: 
   currentDialogue: 0
 --- !u!114 &409810444
 MonoBehaviour:
@@ -6354,7 +6355,7 @@ Transform:
   - {fileID: 2065367}
   - {fileID: 742262276}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &480358506
 GameObject:
@@ -8556,7 +8557,7 @@ Transform:
   - {fileID: 1441377594}
   - {fileID: 944163437}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &659840586 stripped
 GameObject:
@@ -19079,12 +19080,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477983624}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -67.49661, y: 0.9398804, z: -0.19141006}
+  m_LocalPosition: {x: 0.5999985, y: 32.14, z: -25.8}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_Children:
   - {fileID: 654051334}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_Father: {fileID: 135741741}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &1477983627
 MonoBehaviour:
@@ -23134,7 +23135,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1814852635
 GameObject:
@@ -27470,7 +27471,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5297342296427192813, guid: d7798879dacbd0c419a7a80e8d2d3196, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5297342296427192813, guid: d7798879dacbd0c419a7a80e8d2d3196, type: 3}
       propertyPath: m_LocalPosition.x
