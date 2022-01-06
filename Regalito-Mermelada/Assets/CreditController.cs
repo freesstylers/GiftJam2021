@@ -9,6 +9,7 @@ public class CreditController : MonoBehaviour
     public Text agradecimientos;
     public Button exit;
 
+    int i = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,16 @@ public class CreditController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (creditos.gameObject.activeInHierarchy)
+            {
+
+            }
+            else
+            {
+
+            }
+        }
     }
 }
