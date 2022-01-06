@@ -20,9 +20,9 @@ public class DialogueManager : MonoBehaviour
 
     string func = "";
     
-    //public GameObject Piso0;
-    //public GameObject Piso1;
-    //public GameObject Piso2;
+    public GameObject Facultad;
+    public GameObject Arboles;
+    public GameObject Jueza;
 
     public GameObject Eurico;
 
@@ -130,7 +130,8 @@ public class DialogueManager : MonoBehaviour
                     ChangeToJueza();
                     break;
                 case "Trees":
-                    ChangeToTrees();
+                    Facultad.SetActive(false);
+                    Arboles.SetActive(true);
                     break;
                 case "BajarAscensor":
                     Eurico.GetComponent<CharacterController>().enabled = false;

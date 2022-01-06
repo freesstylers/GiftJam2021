@@ -17,12 +17,8 @@ public class ExitTree : MonoBehaviour
             }
             else
             {
-                SceneManager.SetActiveScene(SceneManager.GetSceneByName("Facultad"));
-                GameObject[] a = SceneManager.GetSceneByName("Facultad").GetRootGameObjects();
-                a[1].SetActive(true);
-
-                SceneManager.UnloadSceneAsync("TreeRoad");
-
+                FindObjectOfType<DialogueManager>().Arboles.SetActive(false);
+                FindObjectOfType<DialogueManager>().Facultad.SetActive(true);
             }
         }
         else
