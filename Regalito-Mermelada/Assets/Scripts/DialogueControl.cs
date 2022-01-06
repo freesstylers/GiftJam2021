@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class DialogueControl : MonoBehaviour
 {
+    public DialogueUI d;
     // Start is called before the first frame update
     void Start()
     {
-        
+        FindObjectOfType<DialogueManager>().StartDialogue(d);
     }
 
     // Update is called once per frame
