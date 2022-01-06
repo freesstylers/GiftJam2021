@@ -7,7 +7,7 @@ public class GlowPrePass : MonoBehaviour
 	private static RenderTexture PrePass;
 	private static RenderTexture Blurred;
 
-	private Material _blurMat;
+	public Material _blurMat;
 
 	void OnEnable()
 	{

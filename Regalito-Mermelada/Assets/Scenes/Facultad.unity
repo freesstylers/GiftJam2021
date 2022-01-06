@@ -1361,6 +1361,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a2541c91345f6e4b8abd477f1aead91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _glowMat: {fileID: 2100000, guid: b5814052f25184a46bfb63121aa839b8, type: 2}
+  _blurMaterial: {fileID: 2100000, guid: 24755c1fe166d2f4a996b955e185f8a0, type: 2}
 --- !u!114 &654051337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1374,6 +1376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Intensity: 4
+  _compositeMat: {fileID: 2100000, guid: b5d3daead2406eb4c8a919c6af6f4ad8, type: 2}
 --- !u!1 &659840586 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 719417945797371495, guid: a6888df7da2c7634b81c51237b490591, type: 3}

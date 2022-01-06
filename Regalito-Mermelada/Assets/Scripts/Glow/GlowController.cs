@@ -12,8 +12,8 @@ public class GlowController : MonoBehaviour
 	private CommandBuffer _commandBuffer;
 
 	private List<GlowObjectCmd> _glowableObjects = new List<GlowObjectCmd>();
-	private Material _glowMat;
-	private Material _blurMaterial;
+	public Material _glowMat;
+	public Material _blurMaterial;
 	private Vector2 _blurTexelSize;
 
 	private int _prePassRenderTexID;
@@ -29,8 +29,8 @@ public class GlowController : MonoBehaviour
 	{
 		_instance = this;
 
-		_glowMat = new Material(Shader.Find("Hidden/GlowCmdShader"));
-		_blurMaterial = new Material(Shader.Find("Hidden/Blur"));
+		//_glowMat = new Material(Shader.Find("Hidden/GlowCmdShader"));
+		//_blurMaterial = new Material(Shader.Find("Hidden/Blur"));
 
 		_prePassRenderTexID = Shader.PropertyToID("_GlowPrePassTex");
 		_blurPassRenderTexID = Shader.PropertyToID("_GlowBlurredTex");
