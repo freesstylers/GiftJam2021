@@ -287,6 +287,9 @@ public class DialogueManager : MonoBehaviour
 
     public void callFadeToBlack(DialogueUI dialogue)
     {
+        Eurico.GetComponent<Interact>().currentInteractable.GetComponent<GlowObjectCmd>().running = false;
+        Eurico.GetComponent<Interact>().currentInteractable = null;
+        Eurico.GetComponent<Interact>().mecano.SetActive(false);
         StartCoroutine(FadeToBlack(dialogue));
     }
 
