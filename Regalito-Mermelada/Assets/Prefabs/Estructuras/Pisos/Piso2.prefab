@@ -751,7 +751,7 @@ SpriteRenderer:
   m_Size: {x: 6.3, y: 3.45}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2487316496686617013
@@ -915,7 +915,7 @@ SpriteRenderer:
   m_Size: {x: 6.3, y: 3.45}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2779964444211629253
@@ -1899,7 +1899,7 @@ SpriteRenderer:
   m_Size: {x: 5.1, y: 3.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &4834233493143649401
@@ -58924,7 +58924,7 @@ SpriteRenderer:
   m_Size: {x: 6.3, y: 3.45}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &6604737929294686451
@@ -59296,7 +59296,7 @@ SpriteRenderer:
   m_Size: {x: 12.48, y: 7.68}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &7460484446754248015
@@ -66358,7 +66358,7 @@ PrefabInstance:
       objectReference: {fileID: 4078337195519791386, guid: aed7c1ad6ffddf94989f545e43689fda, type: 3}
     - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
       propertyPath: dialogue.Array.data[0].sentences.Array.data[0].sentence
-      value: Buenas Eurico, estoy investigando los accesos a Red de los laboratorios.
+      value: Buenas, Eurico, estoy investigando los accesos a Red de los laboratorios.
       objectReference: {fileID: 0}
     - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
       propertyPath: dialogue.Array.data[0].sentences.Array.data[1].sentence
@@ -66381,7 +66381,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8033915263875857253, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
       propertyPath: dialogue.Array.data[0].sentences.Array.data[5].sentence
-      value: "En fin, \xBFc\xF3mo vas con la investigaci\xF3n?"
+      value: "En fin, que me voy por las ramas, tal y como nos coment\xF3 Joao, existe
+        un exceso de consumo el\xE9ctrico proveniente de uno de estos laboratorios,
+        por lo que solo tenemos que obtener el acceso a todos para encontrar al culpable."
       objectReference: {fileID: 0}
     - target: {fileID: 8494916819798398135, guid: 374f6a2f3952c8b4a8444b701d7ac8b2, type: 3}
       propertyPath: actions.m_keys.Array.size
