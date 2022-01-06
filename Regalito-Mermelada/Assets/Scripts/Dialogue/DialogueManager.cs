@@ -126,8 +126,8 @@ public class DialogueManager : MonoBehaviour
         {
             switch (func)
             {
-                case "ChangeToJueza":
-                    ChangeToJueza();
+                case "Creditos":
+                    SceneManager.LoadScene("Creditos");
                     break;
                 case "Trees":
                     Facultad.SetActive(false);

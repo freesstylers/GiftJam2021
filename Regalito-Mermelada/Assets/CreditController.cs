@@ -10,10 +10,10 @@ public class CreditController : MonoBehaviour
     public Button exit;
 
     int i = 0;
-    // Start is called before the first frame update
-    void Start()
+
+    public void exitGame()
     {
-        
+        Application.Quit();
     }
 
     // Update is called once per frame
@@ -23,12 +23,19 @@ public class CreditController : MonoBehaviour
         {
             if (creditos.gameObject.activeInHierarchy)
             {
-
+                creditos.gameObject.SetActive(false);
+                agradecimientos.gameObject.SetActive(true);
+                i++;
             }
             else
             {
-
+                creditos.gameObject.SetActive(true);
+                agradecimientos.gameObject.SetActive(false);
+                i++;
             }
+
+            if (i >= 2)
+                exit.gameObject.SetActive(true);
         }
     }
 }
