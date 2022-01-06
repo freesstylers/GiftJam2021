@@ -557,6 +557,10 @@ MonoBehaviour:
         granja de criptomonedas, \xA1me lo dice mi instinto!"
       icon: {fileID: 0}
       sound: {fileID: 0}
+    - sentence: "Me pareci\xF3 ver un se\xF1or un tanto sospechoso en uno de los
+        laboratorios del otro lado del Piso, pero no puedo ir por si pasa algo aqu\xED."
+      icon: {fileID: 0}
+      sound: {fileID: 0}
     function: 0
     functionName: 
   currentDialogue: 0
@@ -866,6 +870,88 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebf3465ba32db7c4485c5b65388c89d1, type: 3}
+--- !u!1 &313389933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 313389934}
+  - component: {fileID: 313389935}
+  m_Layer: 0
+  m_Name: LogoFreestylers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &313389934
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313389933}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.131, y: 2.86, z: 1.61}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8123325202727017712}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!212 &313389935
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313389933}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 5681c44fbad6f7249a50e3eba84296cd, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.2, y: 2.56}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &332574897
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1075,6 +1161,15 @@ MonoBehaviour:
   Arboles: {fileID: 0}
   Jueza: {fileID: 0}
   Eurico: {fileID: 0}
+  typingSounds:
+  - {fileID: 8300000, guid: 091bc17faada86d41bcf3444530b13d8, type: 3}
+  - {fileID: 8300000, guid: ddec5f92e7f8afa40a7d241f506bd4b2, type: 3}
+  - {fileID: 8300000, guid: 03e3f600879dde04c83068c2e484a5e2, type: 3}
+  - {fileID: 8300000, guid: 61347fded30bde24382b0ece1f1c60ec, type: 3}
+  - {fileID: 8300000, guid: 1804c123c592a8f41ad7b19f8999343f, type: 3}
+  - {fileID: 8300000, guid: db1a6263777301e4ab8db48af0d3cafd, type: 3}
+  - {fileID: 8300000, guid: 9bfe3ba090ce64546995fe223fe7dd21, type: 3}
+  - {fileID: 8300000, guid: 9dfdea1db76419c4e84c83dbb63ad877, type: 3}
 --- !u!82 &364515064
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1594,6 +1689,9 @@ MonoBehaviour:
       sound: {fileID: 0}
     - sentence: "Justo lo que har\xEDa falta para entrar sin ser visto en una granja
         de criptomonedas ilegal."
+      icon: {fileID: 0}
+      sound: {fileID: 0}
+    - sentence: Como la que hay en el Piso 1, por ejemplo.
       icon: {fileID: 0}
       sound: {fileID: 0}
     function: 0
@@ -12441,6 +12539,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7211198478108674129, guid: 641f07bba10f07b409e2b424debccb5d, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.data[6].sound
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 9140280066491175399, guid: 641f07bba10f07b409e2b424debccb5d, type: 3}
       propertyPath: dialogue.Array.data[0].sentences.Array.size
       value: 9
@@ -12951,7 +13053,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7344194225472076558, guid: 3349c4ce36c7dd7448bfd1371ca6c04e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8035630591521290924, guid: 3349c4ce36c7dd7448bfd1371ca6c04e, type: 3}
       propertyPath: m_Enabled
@@ -13038,5 +13140,10 @@ GameObject:
 --- !u!4 &8123325202727017711 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1876158043743654498, guid: 3349c4ce36c7dd7448bfd1371ca6c04e, type: 3}
+  m_PrefabInstance: {fileID: 8123325202727017708}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8123325202727017712 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1980218722823871092, guid: 3349c4ce36c7dd7448bfd1371ca6c04e, type: 3}
   m_PrefabInstance: {fileID: 8123325202727017708}
   m_PrefabAsset: {fileID: 0}

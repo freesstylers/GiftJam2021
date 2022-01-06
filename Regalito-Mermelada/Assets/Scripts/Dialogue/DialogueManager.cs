@@ -25,12 +25,15 @@ public class DialogueManager : MonoBehaviour
     public GameObject Jueza;
 
     public GameObject Eurico;
+    AudioSource aSource;
+    public AudioClip[] typingSounds;
 
     // Start is called before the first frame update
     void Start()
     {
         Eurico = GameObject.Find("Eurico");
         sentences = new Queue<Sentence>();
+        aSource = gameObject.GetComponent<AudioSource>();
     }
 
     public void StartDialogue( DialogueUI dialogue)
@@ -97,9 +100,20 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueText.text = "";
 
+        int i = 0;
+
         foreach (char letter in s.ToCharArray())
         {
+            i++;
+
             dialogueText.text += letter;
+
+            if (i % 7 == 0)
+            {
+                aSource.clip = typingSounds[UnityEngine.Random.Range(0, typingSounds.Length)];
+                aSource.Play();
+            }
+
             yield return new WaitForSeconds(0.01f);
         }
     }
