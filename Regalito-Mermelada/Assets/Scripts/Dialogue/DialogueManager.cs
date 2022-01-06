@@ -62,6 +62,7 @@ public class DialogueManager : MonoBehaviour
         DisplayNextDialogue();
     }
 
+
     public void DisplayNextDialogue()
     {
         if (sentences.Count == 0)
@@ -235,6 +236,10 @@ public class DialogueManager : MonoBehaviour
 
     void ChangeToTrees()
     {
+        Eurico.GetComponent<Interact>().currentInteractable.GetComponent<GlowObjectCmd>().running = false;
+        Eurico.GetComponent<Interact>().currentInteractable = null;
+        Eurico.GetComponent<Interact>().mecano.SetActive(false);
+
         AsyncOperation aO = SceneManager.LoadSceneAsync("TreeRoad", LoadSceneMode.Additive);
         GameObject.Find("Facultad").SetActive(false);
 

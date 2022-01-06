@@ -1808,7 +1808,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477983624}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.6, y: 32.14, z: 39.5}
+  m_LocalPosition: {x: 0.6, y: 32.14, z: -25.8}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_Children:
   - {fileID: 654051334}
@@ -2537,6 +2537,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3564180303538842153, guid: 3349c4ce36c7dd7448bfd1371ca6c04e, type: 3}
   m_PrefabInstance: {fileID: 8123325202727017708}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1908501355 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 499924074405727223, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+  m_PrefabInstance: {fileID: 2244197519617876165}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1913925927 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6148842385146432394, guid: 3349c4ce36c7dd7448bfd1371ca6c04e, type: 3}
@@ -2812,6 +2817,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 631074468256509736, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 636525005288096402, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
       propertyPath: actions.m_keys.Array.size
       value: 1
@@ -2895,6 +2904,10 @@ PrefabInstance:
     - target: {fileID: 1210432841281730202, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
       propertyPath: m_Center.z
       value: -1.5999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417881788590964480, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1488735053758556391, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
       propertyPath: GlowColor.a
@@ -3011,6 +3024,10 @@ PrefabInstance:
     - target: {fileID: 4237538741060147027, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
       propertyPath: GlowColor.r
       value: 0.5686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898263808772190751, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5192148534518926229, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
       propertyPath: dialogue.Array.size
@@ -3482,9 +3499,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6383137654876037687, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6626048874285607853, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6968472794067086782, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6987962373498362448, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
       propertyPath: m_IsActive
@@ -3689,6 +3714,10 @@ PrefabInstance:
     - target: {fileID: 8905146822794709624, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924911865589235094, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9030717287192651123, guid: b256b860683fd014ebfbb68a8708aac2, type: 3}
       propertyPath: flag
@@ -9046,7 +9075,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3832824972162860965, guid: 641f07bba10f07b409e2b424debccb5d, type: 3}
       propertyPath: dialogue.Array.data[0].sentences.Array.data[2].sentence
-      value: "Aunque dicen que si mantienes pulsado \"Espacio\" lo suficiente, regresar\xE1s."
+      value: "Aunque dicen que si mantienes pulsado \"Z\" lo suficiente, regresar\xE1s."
       objectReference: {fileID: 0}
     - target: {fileID: 4078704525874508532, guid: 641f07bba10f07b409e2b424debccb5d, type: 3}
       propertyPath: actions.m_keys.Array.size
@@ -9134,7 +9163,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4078704525874508532, guid: 641f07bba10f07b409e2b424debccb5d, type: 3}
       propertyPath: actions.m_values.Array.data[2].data.Array.data[3].gO.Array.size
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4078704525874508532, guid: 641f07bba10f07b409e2b424debccb5d, type: 3}
       propertyPath: actions.m_values.Array.data[1].data.Array.data[0].gO.Array.data[0]
@@ -9188,6 +9217,10 @@ PrefabInstance:
       propertyPath: actions.m_values.Array.data[2].data.Array.data[3].gO.Array.data[7]
       value: 
       objectReference: {fileID: 1065693258}
+    - target: {fileID: 4078704525874508532, guid: 641f07bba10f07b409e2b424debccb5d, type: 3}
+      propertyPath: actions.m_values.Array.data[2].data.Array.data[3].gO.Array.data[8]
+      value: 
+      objectReference: {fileID: 1908501355}
     - target: {fileID: 4172416457969909484, guid: 641f07bba10f07b409e2b424debccb5d, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -9216,7 +9249,23 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 9140280066491175399, guid: 641f07bba10f07b409e2b424debccb5d, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9140280066491175399, guid: 641f07bba10f07b409e2b424debccb5d, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.data[8].sentence
+      value: (Obtienes un "Retordo", una bebida refrescante).
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2360778398370632495, guid: 641f07bba10f07b409e2b424debccb5d, type: 3}
+    - {fileID: 4310806440433504402, guid: 641f07bba10f07b409e2b424debccb5d, type: 3}
+    - {fileID: 2493065949669799827, guid: 641f07bba10f07b409e2b424debccb5d, type: 3}
+    - {fileID: 5063081954079385292, guid: 641f07bba10f07b409e2b424debccb5d, type: 3}
+    - {fileID: 2360778400373018820, guid: 641f07bba10f07b409e2b424debccb5d, type: 3}
+    - {fileID: 1529170283822996510, guid: 641f07bba10f07b409e2b424debccb5d, type: 3}
+    - {fileID: 4259108856512653622, guid: 641f07bba10f07b409e2b424debccb5d, type: 3}
+    - {fileID: 6622585135912262356, guid: 641f07bba10f07b409e2b424debccb5d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 641f07bba10f07b409e2b424debccb5d, type: 3}
 --- !u!1 &4092152731630479856 stripped
 GameObject:
